@@ -1,0 +1,173 @@
+[
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "capital": "Buenos Aires",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/ar.png",
+    "latitude": -34.6037,
+    "longitude": -58.3816,
+    "region": "South America"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "capital": "Canberra",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/au.png",
+    "latitude": -35.2809,
+    "longitude": 149.13,
+    "region": "Oceania"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "capital": "Brasilia",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/br.png",
+    "latitude": -15.7939,
+    "longitude": -47.8828,
+    "region": "South America"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "capital": "Ottawa",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/ca.png",
+    "latitude": 45.4215,
+    "longitude": -75.6972,
+    "region": "North America"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "capital": "Beijing",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/cn.png",
+    "latitude": 39.9042,
+    "longitude": 116.4074,
+    "region": "Asia"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "capital": "Berlin",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/de.png",
+    "latitude": 52.52,
+    "longitude": 13.405,
+    "region": "Europe"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "capital": "Cairo",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/eg.png",
+    "latitude": 30.0444,
+    "longitude": 31.2357,
+    "region": "Africa"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "capital": "Madrid",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/es.png",
+    "latitude": 40.4168,
+    "longitude": -3.7038,
+    "region": "Europe"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "capital": "Paris",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/fr.png",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "region": "Europe"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "capital": "London",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/gb.png",
+    "latitude": 51.5072,
+    "longitude": -0.1276,
+    "region": "Europe"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "capital": "New Delhi",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/in.png",
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "region": "Asia"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "capital": "Rome",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/it.png",
+    "latitude": 41.9028,
+    "longitude": 12.4964,
+    "region": "Europe"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "capital": "Tokyo",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/jp.png",
+    "latitude": 35.6762,
+    "longitude": 139.6503,
+    "region": "Asia"
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "capital": "Rabat",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/ma.png",
+    "latitude": 34.0209,
+    "longitude": -6.8416,
+    "region": "Africa"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "capital": "Mexico City",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/mx.png",
+    "latitude": 19.4326,
+    "longitude": -99.1332,
+    "region": "North America"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "capital": "Abuja",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/ng.png",
+    "latitude": 9.0765,
+    "longitude": 7.3986,
+    "region": "Africa"
+  },
+  {
+    "code": "TR",
+    "name": "Turkey",
+    "capital": "Ankara",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/tr.png",
+    "latitude": 39.9334,
+    "longitude": 32.8597,
+    "region": "Asia"
+  },
+  {
+    "code": "US",
+    "name": "United States",
+    "capital": "Washington, D.C.",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/us.png",
+    "latitude": 38.9072,
+    "longitude": -77.0369,
+    "region": "North America"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "capital": "Pretoria",
+    "flagAssetOrUrl": "https://flagcdn.com/w320/za.png",
+    "latitude": -25.7479,
+    "longitude": 28.2293,
+    "region": "Africa"
+  }
+]
