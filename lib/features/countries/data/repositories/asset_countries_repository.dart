@@ -15,6 +15,7 @@ class AssetCountriesRepository implements CountriesRepository {
   }) : _assetBundle = assetBundle;
 
   final AssetBundle _assetBundle;
+  /// Location of the bundled countries JSON file.
   final String assetPath;
 
   /// Parses the JSON asset into country entities.

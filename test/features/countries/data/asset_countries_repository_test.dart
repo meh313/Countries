@@ -12,6 +12,11 @@ class TestAssetBundle extends CachingAssetBundle {
   final String _payload;
 
   @override
+  Future<ByteData> load(String key) async {
+    throw UnimplementedError('Binary loading is not needed for this test.');
+  }
+
+  @override
   Future<String> loadString(String key, {bool cache = true}) async {
     return _payload;
   }
