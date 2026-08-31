@@ -15,6 +15,7 @@ class AssetCountriesRepository implements CountriesRepository {
   }) : _assetBundle = assetBundle;
 
   final AssetBundle _assetBundle;
+
   /// Location of the bundled countries JSON file.
   final String assetPath;
 
@@ -25,7 +26,8 @@ class AssetCountriesRepository implements CountriesRepository {
     final decoded = jsonDecode(jsonString) as List<dynamic>;
 
     return decoded
-        .map((dynamic item) => CountryDto.fromJson(item as Map<String, dynamic>))
+        .map(
+            (dynamic item) => CountryDto.fromJson(item as Map<String, dynamic>))
         .map((dto) => dto.toDomain())
         .toList(growable: false);
   }

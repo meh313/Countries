@@ -17,7 +17,7 @@ class CountryMap extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final center = LatLng(country.latitude, country.longitude);
+    final capitalPoint = LatLng(country.latitude, country.longitude);
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(24),
@@ -26,8 +26,9 @@ class CountryMap extends StatelessWidget {
         child: FlutterMap(
           key: ValueKey('country-map-${country.code}'),
           options: MapOptions(
-            initialCenter: center,
-            initialZoom: 4.8,
+            initialCenter: capitalPoint,
+            // Keep a stable country-level zoom instead of a city-level focus.
+            initialZoom: 3.2,
             interactionOptions: const InteractionOptions(
               flags: InteractiveFlag.all,
             ),
@@ -40,27 +41,21 @@ class CountryMap extends StatelessWidget {
             MarkerLayer(
               markers: [
                 Marker(
-                  point: center,
-                  width: 80,
-                  height: 80,
-                  child: Container(
+                  point: capitalPoint,
+                  width: 28,
+                  height: 28,
+                  child: Icon(
                     key: ValueKey('country-map-marker-${country.code}'),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.primary,
-                      shape: BoxShape.circle,
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Colors.black26,
-                          blurRadius: 12,
-                          offset: Offset(0, 4),
-                        ),
-                      ],
-                    ),
-                    alignment: Alignment.center,
-                    child: const Icon(
-                      Icons.location_on,
-                      color: Colors.white,
-                    ),
+                    Icons.location_on,
+                    size: 28,
+                    color: Theme.of(context).colorScheme.primary,
+                    shadows: const [
+                      Shadow(
+                        color: Colors.black38,
+                        blurRadius: 6,
+                        offset: Offset(0, 2),
+                      ),
+                    ],
                   ),
                 ),
               ],

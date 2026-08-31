@@ -11,7 +11,8 @@ class CountriesListScreen extends ConsumerStatefulWidget {
   const CountriesListScreen({super.key});
 
   @override
-  ConsumerState<CountriesListScreen> createState() => _CountriesListScreenState();
+  ConsumerState<CountriesListScreen> createState() =>
+      _CountriesListScreenState();
 }
 
 class _CountriesListScreenState extends ConsumerState<CountriesListScreen> {
@@ -36,13 +37,6 @@ class _CountriesListScreenState extends ConsumerState<CountriesListScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Countries'),
-        actions: [
-          IconButton(
-            tooltip: 'Quiz mode',
-            onPressed: () => context.push('/quiz'),
-            icon: const Icon(Icons.quiz_outlined),
-          ),
-        ],
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),

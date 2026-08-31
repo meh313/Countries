@@ -30,32 +30,51 @@ class FakeCountriesRepository implements CountriesRepository {
 }
 
 void main() {
-  const countries = <Country>[
-    Country(
+  final countries = <Country>[
+    const Country(
       code: 'MA',
       name: 'Morocco',
       capital: 'Rabat',
-      flagAssetOrUrl: 'https://flagcdn.com/w320/ma.png',
+      flagAssetOrUrl: 'assets/flags/ma.png',
       latitude: 34.0209,
       longitude: -6.8416,
       region: 'Africa',
     ),
-    Country(
+    const Country(
       code: 'FR',
       name: 'France',
       capital: 'Paris',
-      flagAssetOrUrl: 'https://flagcdn.com/w320/fr.png',
+      flagAssetOrUrl: 'assets/flags/fr.png',
       latitude: 48.8566,
       longitude: 2.3522,
       region: 'Europe',
     ),
+    ...List<Country>.generate(24, (index) {
+      final id = index + 1;
+      final region = switch (id % 4) {
+        0 => 'Europe',
+        1 => 'Africa',
+        2 => 'Asia',
+        _ => 'Americas',
+      };
+
+      return Country(
+        code: 'C$id',
+        name: 'Zed Country $id',
+        capital: 'Capital $id',
+        flagAssetOrUrl: 'assets/flags/c$id.png',
+        latitude: 10 + id.toDouble(),
+        longitude: 20 + id.toDouble(),
+        region: region,
+      );
+    }),
   ];
 
   Widget buildApp() {
     return ProviderScope(
       overrides: [
         countriesRepositoryProvider.overrideWithValue(
-          const FakeCountriesRepository(countries),
+          FakeCountriesRepository(countries),
         ),
       ],
       child: const CountriesApp(),
@@ -67,6 +86,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('Countries'), findsOneWidget);
+    expect(find.byKey(const ValueKey('bottom-start-button')), findsOneWidget);
     expect(find.text('Morocco'), findsOneWidget);
     expect(find.text('France'), findsOneWidget);
     expect(find.text('Capital: Rabat'), findsOneWidget);
@@ -86,7 +106,8 @@ void main() {
     expect(find.text('France'), findsNothing);
   });
 
-  testWidgets('opens the details screen when a country is tapped', (tester) async {
+  testWidgets('opens the details screen when a country is tapped',
+      (tester) async {
     await tester.pumpWidget(buildApp());
     await tester.pumpAndSettle();
 
@@ -99,7 +120,41 @@ void main() {
     expect(find.textContaining('34.0209'), findsOneWidget);
   });
 
-  testWidgets('registers the quiz placeholder route', (tester) async {
+  testWidgets('opens quiz types from start button and launches quick quiz', (
+    tester,
+  ) async {
+    await tester.pumpWidget(buildApp());
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('bottom-start-button')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Choose Quiz Type'), findsOneWidget);
+    expect(find.text('Quick Quiz (MCQ)'), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('quiz-type-quick')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Quick Quiz (MCQ)'), findsWidgets);
+    expect(find.textContaining('Question 1/15'), findsOneWidget);
+    expect(find.byKey(const ValueKey('quick-quiz-option-0')), findsOneWidget);
+    expect(find.byKey(const ValueKey('bottom-start-button')), findsNothing);
+
+    await tester.tap(find.byKey(const ValueKey('quick-quiz-option-0')));
+    await tester.pumpAndSettle();
+
+    expect(
+        find.byKey(const ValueKey('quick-quiz-feedback-text')), findsOneWidget);
+    expect(
+      find.byKey(const ValueKey('quick-quiz-view-map-button')),
+      findsOneWidget,
+    );
+    expect(
+        find.byKey(const ValueKey('quick-quiz-next-button')), findsOneWidget);
+  });
+
+  testWidgets('opens country map from quick quiz answer feedback',
+      (tester) async {
     await tester.pumpWidget(buildApp());
     await tester.pumpAndSettle();
 
@@ -107,11 +162,47 @@ void main() {
       tester.element(find.byType(MaterialApp)),
     );
     final router = container.read(appRouterProvider);
-
-    router.go('/quiz');
+    router.go('/quiz/quick');
     await tester.pumpAndSettle();
 
-    expect(find.text('Quiz Mode'), findsOneWidget);
-    expect(find.textContaining('Capitals quiz'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('quick-quiz-option-0')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('quick-quiz-view-map-button')));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(CountryMap), findsOneWidget);
+
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+
+    expect(find.text('Quick Quiz (MCQ)'), findsWidgets);
+    expect(
+        find.byKey(const ValueKey('quick-quiz-next-button')), findsOneWidget);
+  });
+
+  testWidgets('completes the 15-question quick quiz and shows final result', (
+    tester,
+  ) async {
+    await tester.pumpWidget(buildApp());
+    await tester.pumpAndSettle();
+
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(MaterialApp)),
+    );
+    final router = container.read(appRouterProvider);
+    router.go('/quiz/quick');
+    await tester.pumpAndSettle();
+
+    for (var i = 0; i < 15; i += 1) {
+      await tester.tap(find.byKey(const ValueKey('quick-quiz-option-0')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('quick-quiz-next-button')));
+      await tester.pumpAndSettle();
+    }
+
+    expect(
+        find.byKey(const ValueKey('quick-quiz-result-score')), findsOneWidget);
+    expect(find.byKey(const ValueKey('quick-quiz-restart-button')),
+        findsOneWidget);
   });
 }

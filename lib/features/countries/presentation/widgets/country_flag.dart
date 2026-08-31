@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Renders a country flag from a network URL.
+/// Renders a country flag from a local bundled asset.
 class CountryFlag extends StatelessWidget {
   /// Creates the flag widget.
   const CountryFlag({
@@ -11,7 +11,7 @@ class CountryFlag extends StatelessWidget {
     this.height = 40,
   });
 
-  /// Image URL for the flag asset.
+  /// Asset path for the flag image.
   final String imageUrl;
 
   /// Shared hero tag between list and details screens.
@@ -25,25 +25,27 @@ class CountryFlag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final fallback = Container(
+      width: width,
+      height: height,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
+      alignment: Alignment.center,
+      child: const Icon(Icons.flag_outlined),
+    );
+
+    final image = Image.asset(
+      imageUrl,
+      width: width,
+      height: height,
+      fit: BoxFit.cover,
+      errorBuilder: (context, error, stackTrace) => fallback,
+    );
+
     return Hero(
       tag: heroTag,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
-        child: Image.network(
-          imageUrl,
-          width: width,
-          height: height,
-          fit: BoxFit.cover,
-          errorBuilder: (context, error, stackTrace) {
-            return Container(
-              width: width,
-              height: height,
-              color: Theme.of(context).colorScheme.surfaceContainerHighest,
-              alignment: Alignment.center,
-              child: const Icon(Icons.flag_outlined),
-            );
-          },
-        ),
+        child: image,
       ),
     );
   }

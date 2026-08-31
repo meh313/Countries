@@ -1,173 +1,2243 @@
-[
-  {
-    "code": "AR",
-    "name": "Argentina",
-    "capital": "Buenos Aires",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/ar.png",
-    "latitude": -34.6037,
-    "longitude": -58.3816,
-    "region": "South America"
-  },
-  {
-    "code": "AU",
-    "name": "Australia",
-    "capital": "Canberra",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/au.png",
-    "latitude": -35.2809,
-    "longitude": 149.13,
-    "region": "Oceania"
-  },
-  {
-    "code": "BR",
-    "name": "Brazil",
-    "capital": "Brasilia",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/br.png",
-    "latitude": -15.7939,
-    "longitude": -47.8828,
-    "region": "South America"
-  },
-  {
-    "code": "CA",
-    "name": "Canada",
-    "capital": "Ottawa",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/ca.png",
-    "latitude": 45.4215,
-    "longitude": -75.6972,
-    "region": "North America"
-  },
-  {
-    "code": "CN",
-    "name": "China",
-    "capital": "Beijing",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/cn.png",
-    "latitude": 39.9042,
-    "longitude": 116.4074,
-    "region": "Asia"
-  },
-  {
-    "code": "DE",
-    "name": "Germany",
-    "capital": "Berlin",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/de.png",
-    "latitude": 52.52,
-    "longitude": 13.405,
-    "region": "Europe"
-  },
-  {
-    "code": "EG",
-    "name": "Egypt",
-    "capital": "Cairo",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/eg.png",
-    "latitude": 30.0444,
-    "longitude": 31.2357,
-    "region": "Africa"
-  },
-  {
-    "code": "ES",
-    "name": "Spain",
-    "capital": "Madrid",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/es.png",
-    "latitude": 40.4168,
-    "longitude": -3.7038,
-    "region": "Europe"
-  },
-  {
-    "code": "FR",
-    "name": "France",
-    "capital": "Paris",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/fr.png",
-    "latitude": 48.8566,
-    "longitude": 2.3522,
-    "region": "Europe"
-  },
-  {
-    "code": "GB",
-    "name": "United Kingdom",
-    "capital": "London",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/gb.png",
-    "latitude": 51.5072,
-    "longitude": -0.1276,
-    "region": "Europe"
-  },
-  {
-    "code": "IN",
-    "name": "India",
-    "capital": "New Delhi",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/in.png",
-    "latitude": 28.6139,
-    "longitude": 77.209,
-    "region": "Asia"
-  },
-  {
-    "code": "IT",
-    "name": "Italy",
-    "capital": "Rome",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/it.png",
-    "latitude": 41.9028,
-    "longitude": 12.4964,
-    "region": "Europe"
-  },
-  {
-    "code": "JP",
-    "name": "Japan",
-    "capital": "Tokyo",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/jp.png",
-    "latitude": 35.6762,
-    "longitude": 139.6503,
-    "region": "Asia"
-  },
-  {
-    "code": "MA",
-    "name": "Morocco",
-    "capital": "Rabat",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/ma.png",
-    "latitude": 34.0209,
-    "longitude": -6.8416,
-    "region": "Africa"
-  },
-  {
-    "code": "MX",
-    "name": "Mexico",
-    "capital": "Mexico City",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/mx.png",
-    "latitude": 19.4326,
-    "longitude": -99.1332,
-    "region": "North America"
-  },
-  {
-    "code": "NG",
-    "name": "Nigeria",
-    "capital": "Abuja",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/ng.png",
-    "latitude": 9.0765,
-    "longitude": 7.3986,
-    "region": "Africa"
-  },
-  {
-    "code": "TR",
-    "name": "Turkey",
-    "capital": "Ankara",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/tr.png",
-    "latitude": 39.9334,
-    "longitude": 32.8597,
-    "region": "Asia"
-  },
-  {
-    "code": "US",
-    "name": "United States",
-    "capital": "Washington, D.C.",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/us.png",
-    "latitude": 38.9072,
-    "longitude": -77.0369,
-    "region": "North America"
-  },
-  {
-    "code": "ZA",
-    "name": "South Africa",
-    "capital": "Pretoria",
-    "flagAssetOrUrl": "https://flagcdn.com/w320/za.png",
-    "latitude": -25.7479,
-    "longitude": 28.2293,
-    "region": "Africa"
-  }
+﻿[
+    {
+        "code":  "AX",
+        "name":  "Åland Islands",
+        "capital":  "Mariehamn",
+        "flagAssetOrUrl":  "assets/flags/ax.png",
+        "latitude":  60.12,
+        "longitude":  19.9,
+        "region":  "Europe"
+    },
+    {
+        "code":  "AF",
+        "name":  "Afghanistan",
+        "capital":  "Kabul",
+        "flagAssetOrUrl":  "assets/flags/af.png",
+        "latitude":  34.52,
+        "longitude":  69.18,
+        "region":  "Asia"
+    },
+    {
+        "code":  "AL",
+        "name":  "Albania",
+        "capital":  "Tirana",
+        "flagAssetOrUrl":  "assets/flags/al.png",
+        "latitude":  41.32,
+        "longitude":  19.82,
+        "region":  "Europe"
+    },
+    {
+        "code":  "DZ",
+        "name":  "Algeria",
+        "capital":  "Algiers",
+        "flagAssetOrUrl":  "assets/flags/dz.png",
+        "latitude":  36.75,
+        "longitude":  3.05,
+        "region":  "Africa"
+    },
+    {
+        "code":  "AS",
+        "name":  "American Samoa",
+        "capital":  "Pago Pago",
+        "flagAssetOrUrl":  "assets/flags/as.png",
+        "latitude":  -14.27,
+        "longitude":  -170.7,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "AD",
+        "name":  "Andorra",
+        "capital":  "Andorra la Vella",
+        "flagAssetOrUrl":  "assets/flags/ad.png",
+        "latitude":  42.5,
+        "longitude":  1.52,
+        "region":  "Europe"
+    },
+    {
+        "code":  "AO",
+        "name":  "Angola",
+        "capital":  "Luanda",
+        "flagAssetOrUrl":  "assets/flags/ao.png",
+        "latitude":  -8.83,
+        "longitude":  13.22,
+        "region":  "Africa"
+    },
+    {
+        "code":  "AI",
+        "name":  "Anguilla",
+        "capital":  "The Valley",
+        "flagAssetOrUrl":  "assets/flags/ai.png",
+        "latitude":  18.22,
+        "longitude":  -63.05,
+        "region":  "Americas"
+    },
+    {
+        "code":  "AQ",
+        "name":  "Antarctica",
+        "capital":  "N/A",
+        "flagAssetOrUrl":  "assets/flags/aq.png",
+        "latitude":  -90,
+        "longitude":  0,
+        "region":  "Antarctic"
+    },
+    {
+        "code":  "AG",
+        "name":  "Antigua and Barbuda",
+        "capital":  "Saint John\u0027s",
+        "flagAssetOrUrl":  "assets/flags/ag.png",
+        "latitude":  17.12,
+        "longitude":  -61.85,
+        "region":  "Americas"
+    },
+    {
+        "code":  "AR",
+        "name":  "Argentina",
+        "capital":  "Buenos Aires",
+        "flagAssetOrUrl":  "assets/flags/ar.png",
+        "latitude":  -34.58,
+        "longitude":  -58.67,
+        "region":  "Americas"
+    },
+    {
+        "code":  "AM",
+        "name":  "Armenia",
+        "capital":  "Yerevan",
+        "flagAssetOrUrl":  "assets/flags/am.png",
+        "latitude":  40.17,
+        "longitude":  44.5,
+        "region":  "Asia"
+    },
+    {
+        "code":  "AW",
+        "name":  "Aruba",
+        "capital":  "Oranjestad",
+        "flagAssetOrUrl":  "assets/flags/aw.png",
+        "latitude":  12.52,
+        "longitude":  -70.03,
+        "region":  "Americas"
+    },
+    {
+        "code":  "AU",
+        "name":  "Australia",
+        "capital":  "Canberra",
+        "flagAssetOrUrl":  "assets/flags/au.png",
+        "latitude":  -35.27,
+        "longitude":  149.13,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "AT",
+        "name":  "Austria",
+        "capital":  "Vienna",
+        "flagAssetOrUrl":  "assets/flags/at.png",
+        "latitude":  48.2,
+        "longitude":  16.37,
+        "region":  "Europe"
+    },
+    {
+        "code":  "AZ",
+        "name":  "Azerbaijan",
+        "capital":  "Baku",
+        "flagAssetOrUrl":  "assets/flags/az.png",
+        "latitude":  40.38,
+        "longitude":  49.87,
+        "region":  "Asia"
+    },
+    {
+        "code":  "BS",
+        "name":  "Bahamas",
+        "capital":  "Nassau",
+        "flagAssetOrUrl":  "assets/flags/bs.png",
+        "latitude":  25.08,
+        "longitude":  -77.35,
+        "region":  "Americas"
+    },
+    {
+        "code":  "BH",
+        "name":  "Bahrain",
+        "capital":  "Manama",
+        "flagAssetOrUrl":  "assets/flags/bh.png",
+        "latitude":  26.23,
+        "longitude":  50.57,
+        "region":  "Asia"
+    },
+    {
+        "code":  "BD",
+        "name":  "Bangladesh",
+        "capital":  "Dhaka",
+        "flagAssetOrUrl":  "assets/flags/bd.png",
+        "latitude":  23.72,
+        "longitude":  90.4,
+        "region":  "Asia"
+    },
+    {
+        "code":  "BB",
+        "name":  "Barbados",
+        "capital":  "Bridgetown",
+        "flagAssetOrUrl":  "assets/flags/bb.png",
+        "latitude":  13.1,
+        "longitude":  -59.62,
+        "region":  "Americas"
+    },
+    {
+        "code":  "BY",
+        "name":  "Belarus",
+        "capital":  "Minsk",
+        "flagAssetOrUrl":  "assets/flags/by.png",
+        "latitude":  53.9,
+        "longitude":  27.57,
+        "region":  "Europe"
+    },
+    {
+        "code":  "BE",
+        "name":  "Belgium",
+        "capital":  "Brussels",
+        "flagAssetOrUrl":  "assets/flags/be.png",
+        "latitude":  50.83,
+        "longitude":  4.33,
+        "region":  "Europe"
+    },
+    {
+        "code":  "BZ",
+        "name":  "Belize",
+        "capital":  "Belmopan",
+        "flagAssetOrUrl":  "assets/flags/bz.png",
+        "latitude":  17.25,
+        "longitude":  -88.77,
+        "region":  "Americas"
+    },
+    {
+        "code":  "BJ",
+        "name":  "Benin",
+        "capital":  "Porto-Novo",
+        "flagAssetOrUrl":  "assets/flags/bj.png",
+        "latitude":  6.48,
+        "longitude":  2.62,
+        "region":  "Africa"
+    },
+    {
+        "code":  "BM",
+        "name":  "Bermuda",
+        "capital":  "Hamilton",
+        "flagAssetOrUrl":  "assets/flags/bm.png",
+        "latitude":  32.28,
+        "longitude":  -64.78,
+        "region":  "Americas"
+    },
+    {
+        "code":  "BT",
+        "name":  "Bhutan",
+        "capital":  "Thimphu",
+        "flagAssetOrUrl":  "assets/flags/bt.png",
+        "latitude":  27.47,
+        "longitude":  89.63,
+        "region":  "Asia"
+    },
+    {
+        "code":  "BO",
+        "name":  "Bolivia",
+        "capital":  "Sucre",
+        "flagAssetOrUrl":  "assets/flags/bo.png",
+        "latitude":  -19.02,
+        "longitude":  -65.26,
+        "region":  "Americas"
+    },
+    {
+        "code":  "BA",
+        "name":  "Bosnia and Herzegovina",
+        "capital":  "Sarajevo",
+        "flagAssetOrUrl":  "assets/flags/ba.png",
+        "latitude":  43.87,
+        "longitude":  18.42,
+        "region":  "Europe"
+    },
+    {
+        "code":  "BW",
+        "name":  "Botswana",
+        "capital":  "Gaborone",
+        "flagAssetOrUrl":  "assets/flags/bw.png",
+        "latitude":  -24.63,
+        "longitude":  25.9,
+        "region":  "Africa"
+    },
+    {
+        "code":  "BV",
+        "name":  "Bouvet Island",
+        "capital":  "N/A",
+        "flagAssetOrUrl":  "assets/flags/bv.png",
+        "latitude":  -54.4208,
+        "longitude":  3.3464,
+        "region":  "Antarctic"
+    },
+    {
+        "code":  "BR",
+        "name":  "Brazil",
+        "capital":  "Brasília",
+        "flagAssetOrUrl":  "assets/flags/br.png",
+        "latitude":  -15.79,
+        "longitude":  -47.88,
+        "region":  "Americas"
+    },
+    {
+        "code":  "IO",
+        "name":  "British Indian Ocean Territory",
+        "capital":  "Diego Garcia",
+        "flagAssetOrUrl":  "assets/flags/io.png",
+        "latitude":  -7.3,
+        "longitude":  72.4,
+        "region":  "Africa"
+    },
+    {
+        "code":  "VG",
+        "name":  "British Virgin Islands",
+        "capital":  "Road Town",
+        "flagAssetOrUrl":  "assets/flags/vg.png",
+        "latitude":  18.42,
+        "longitude":  -64.62,
+        "region":  "Americas"
+    },
+    {
+        "code":  "BN",
+        "name":  "Brunei",
+        "capital":  "Bandar Seri Begawan",
+        "flagAssetOrUrl":  "assets/flags/bn.png",
+        "latitude":  4.88,
+        "longitude":  114.93,
+        "region":  "Asia"
+    },
+    {
+        "code":  "BG",
+        "name":  "Bulgaria",
+        "capital":  "Sofia",
+        "flagAssetOrUrl":  "assets/flags/bg.png",
+        "latitude":  42.68,
+        "longitude":  23.32,
+        "region":  "Europe"
+    },
+    {
+        "code":  "BF",
+        "name":  "Burkina Faso",
+        "capital":  "Ouagadougou",
+        "flagAssetOrUrl":  "assets/flags/bf.png",
+        "latitude":  12.37,
+        "longitude":  -1.52,
+        "region":  "Africa"
+    },
+    {
+        "code":  "BI",
+        "name":  "Burundi",
+        "capital":  "Gitega",
+        "flagAssetOrUrl":  "assets/flags/bi.png",
+        "latitude":  -3.43,
+        "longitude":  29.93,
+        "region":  "Africa"
+    },
+    {
+        "code":  "KH",
+        "name":  "Cambodia",
+        "capital":  "Phnom Penh",
+        "flagAssetOrUrl":  "assets/flags/kh.png",
+        "latitude":  11.55,
+        "longitude":  104.92,
+        "region":  "Asia"
+    },
+    {
+        "code":  "CM",
+        "name":  "Cameroon",
+        "capital":  "Yaoundé",
+        "flagAssetOrUrl":  "assets/flags/cm.png",
+        "latitude":  3.85,
+        "longitude":  11.5,
+        "region":  "Africa"
+    },
+    {
+        "code":  "CA",
+        "name":  "Canada",
+        "capital":  "Ottawa",
+        "flagAssetOrUrl":  "assets/flags/ca.png",
+        "latitude":  45.42,
+        "longitude":  -75.7,
+        "region":  "Americas"
+    },
+    {
+        "code":  "CV",
+        "name":  "Cape Verde",
+        "capital":  "Praia",
+        "flagAssetOrUrl":  "assets/flags/cv.png",
+        "latitude":  14.92,
+        "longitude":  -23.52,
+        "region":  "Africa"
+    },
+    {
+        "code":  "BQ",
+        "name":  "Caribbean Netherlands",
+        "capital":  "Kralendijk",
+        "flagAssetOrUrl":  "assets/flags/bq.png",
+        "latitude":  12.14,
+        "longitude":  -68.27,
+        "region":  "Americas"
+    },
+    {
+        "code":  "KY",
+        "name":  "Cayman Islands",
+        "capital":  "George Town",
+        "flagAssetOrUrl":  "assets/flags/ky.png",
+        "latitude":  19.3,
+        "longitude":  -81.38,
+        "region":  "Americas"
+    },
+    {
+        "code":  "CF",
+        "name":  "Central African Republic",
+        "capital":  "Bangui",
+        "flagAssetOrUrl":  "assets/flags/cf.png",
+        "latitude":  4.37,
+        "longitude":  18.58,
+        "region":  "Africa"
+    },
+    {
+        "code":  "TD",
+        "name":  "Chad",
+        "capital":  "N\u0027Djamena",
+        "flagAssetOrUrl":  "assets/flags/td.png",
+        "latitude":  12.1,
+        "longitude":  15.03,
+        "region":  "Africa"
+    },
+    {
+        "code":  "CL",
+        "name":  "Chile",
+        "capital":  "Santiago",
+        "flagAssetOrUrl":  "assets/flags/cl.png",
+        "latitude":  -33.45,
+        "longitude":  -70.67,
+        "region":  "Americas"
+    },
+    {
+        "code":  "CN",
+        "name":  "China",
+        "capital":  "Beijing",
+        "flagAssetOrUrl":  "assets/flags/cn.png",
+        "latitude":  39.92,
+        "longitude":  116.38,
+        "region":  "Asia"
+    },
+    {
+        "code":  "CX",
+        "name":  "Christmas Island",
+        "capital":  "Flying Fish Cove",
+        "flagAssetOrUrl":  "assets/flags/cx.png",
+        "latitude":  -10.42,
+        "longitude":  105.68,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "CC",
+        "name":  "Cocos (Keeling) Islands",
+        "capital":  "West Island",
+        "flagAssetOrUrl":  "assets/flags/cc.png",
+        "latitude":  -12.17,
+        "longitude":  96.83,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "CO",
+        "name":  "Colombia",
+        "capital":  "Bogotá",
+        "flagAssetOrUrl":  "assets/flags/co.png",
+        "latitude":  4.71,
+        "longitude":  -74.07,
+        "region":  "Americas"
+    },
+    {
+        "code":  "KM",
+        "name":  "Comoros",
+        "capital":  "Moroni",
+        "flagAssetOrUrl":  "assets/flags/km.png",
+        "latitude":  -11.7,
+        "longitude":  43.23,
+        "region":  "Africa"
+    },
+    {
+        "code":  "CK",
+        "name":  "Cook Islands",
+        "capital":  "Avarua",
+        "flagAssetOrUrl":  "assets/flags/ck.png",
+        "latitude":  -21.2,
+        "longitude":  -159.77,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "CR",
+        "name":  "Costa Rica",
+        "capital":  "San José",
+        "flagAssetOrUrl":  "assets/flags/cr.png",
+        "latitude":  9.93,
+        "longitude":  -84.09,
+        "region":  "Americas"
+    },
+    {
+        "code":  "HR",
+        "name":  "Croatia",
+        "capital":  "Zagreb",
+        "flagAssetOrUrl":  "assets/flags/hr.png",
+        "latitude":  45.8,
+        "longitude":  16,
+        "region":  "Europe"
+    },
+    {
+        "code":  "CU",
+        "name":  "Cuba",
+        "capital":  "Havana",
+        "flagAssetOrUrl":  "assets/flags/cu.png",
+        "latitude":  23.12,
+        "longitude":  -82.35,
+        "region":  "Americas"
+    },
+    {
+        "code":  "CW",
+        "name":  "Curaçao",
+        "capital":  "Willemstad",
+        "flagAssetOrUrl":  "assets/flags/cw.png",
+        "latitude":  12.1,
+        "longitude":  -68.92,
+        "region":  "Americas"
+    },
+    {
+        "code":  "CY",
+        "name":  "Cyprus",
+        "capital":  "Nicosia",
+        "flagAssetOrUrl":  "assets/flags/cy.png",
+        "latitude":  35.17,
+        "longitude":  33.37,
+        "region":  "Europe"
+    },
+    {
+        "code":  "CZ",
+        "name":  "Czechia",
+        "capital":  "Prague",
+        "flagAssetOrUrl":  "assets/flags/cz.png",
+        "latitude":  50.08,
+        "longitude":  14.47,
+        "region":  "Europe"
+    },
+    {
+        "code":  "DK",
+        "name":  "Denmark",
+        "capital":  "Copenhagen",
+        "flagAssetOrUrl":  "assets/flags/dk.png",
+        "latitude":  55.67,
+        "longitude":  12.58,
+        "region":  "Europe"
+    },
+    {
+        "code":  "DJ",
+        "name":  "Djibouti",
+        "capital":  "Djibouti",
+        "flagAssetOrUrl":  "assets/flags/dj.png",
+        "latitude":  11.58,
+        "longitude":  43.15,
+        "region":  "Africa"
+    },
+    {
+        "code":  "DM",
+        "name":  "Dominica",
+        "capital":  "Roseau",
+        "flagAssetOrUrl":  "assets/flags/dm.png",
+        "latitude":  15.3,
+        "longitude":  -61.4,
+        "region":  "Americas"
+    },
+    {
+        "code":  "DO",
+        "name":  "Dominican Republic",
+        "capital":  "Santo Domingo",
+        "flagAssetOrUrl":  "assets/flags/do.png",
+        "latitude":  18.47,
+        "longitude":  -69.9,
+        "region":  "Americas"
+    },
+    {
+        "code":  "CD",
+        "name":  "DR Congo",
+        "capital":  "Kinshasa",
+        "flagAssetOrUrl":  "assets/flags/cd.png",
+        "latitude":  -4.32,
+        "longitude":  15.3,
+        "region":  "Africa"
+    },
+    {
+        "code":  "EC",
+        "name":  "Ecuador",
+        "capital":  "Quito",
+        "flagAssetOrUrl":  "assets/flags/ec.png",
+        "latitude":  -0.22,
+        "longitude":  -78.5,
+        "region":  "Americas"
+    },
+    {
+        "code":  "EG",
+        "name":  "Egypt",
+        "capital":  "Cairo",
+        "flagAssetOrUrl":  "assets/flags/eg.png",
+        "latitude":  30.05,
+        "longitude":  31.25,
+        "region":  "Africa"
+    },
+    {
+        "code":  "SV",
+        "name":  "El Salvador",
+        "capital":  "San Salvador",
+        "flagAssetOrUrl":  "assets/flags/sv.png",
+        "latitude":  13.7,
+        "longitude":  -89.2,
+        "region":  "Americas"
+    },
+    {
+        "code":  "GQ",
+        "name":  "Equatorial Guinea",
+        "capital":  "Ciudad de la Paz",
+        "flagAssetOrUrl":  "assets/flags/gq.png",
+        "latitude":  1.35,
+        "longitude":  10.49,
+        "region":  "Africa"
+    },
+    {
+        "code":  "ER",
+        "name":  "Eritrea",
+        "capital":  "Asmara",
+        "flagAssetOrUrl":  "assets/flags/er.png",
+        "latitude":  15.33,
+        "longitude":  38.93,
+        "region":  "Africa"
+    },
+    {
+        "code":  "EE",
+        "name":  "Estonia",
+        "capital":  "Tallinn",
+        "flagAssetOrUrl":  "assets/flags/ee.png",
+        "latitude":  59.43,
+        "longitude":  24.72,
+        "region":  "Europe"
+    },
+    {
+        "code":  "SZ",
+        "name":  "Eswatini",
+        "capital":  "Mbabane",
+        "flagAssetOrUrl":  "assets/flags/sz.png",
+        "latitude":  -26.32,
+        "longitude":  31.13,
+        "region":  "Africa"
+    },
+    {
+        "code":  "ET",
+        "name":  "Ethiopia",
+        "capital":  "Addis Ababa",
+        "flagAssetOrUrl":  "assets/flags/et.png",
+        "latitude":  9.03,
+        "longitude":  38.7,
+        "region":  "Africa"
+    },
+    {
+        "code":  "FK",
+        "name":  "Falkland Islands",
+        "capital":  "Stanley",
+        "flagAssetOrUrl":  "assets/flags/fk.png",
+        "latitude":  -51.7,
+        "longitude":  -57.85,
+        "region":  "Americas"
+    },
+    {
+        "code":  "FO",
+        "name":  "Faroe Islands",
+        "capital":  "Tórshavn",
+        "flagAssetOrUrl":  "assets/flags/fo.png",
+        "latitude":  62.01,
+        "longitude":  -6.77,
+        "region":  "Europe"
+    },
+    {
+        "code":  "FJ",
+        "name":  "Fiji",
+        "capital":  "Suva",
+        "flagAssetOrUrl":  "assets/flags/fj.png",
+        "latitude":  -18.13,
+        "longitude":  178.42,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "FI",
+        "name":  "Finland",
+        "capital":  "Helsinki",
+        "flagAssetOrUrl":  "assets/flags/fi.png",
+        "latitude":  60.17,
+        "longitude":  24.93,
+        "region":  "Europe"
+    },
+    {
+        "code":  "FR",
+        "name":  "France",
+        "capital":  "Paris",
+        "flagAssetOrUrl":  "assets/flags/fr.png",
+        "latitude":  48.87,
+        "longitude":  2.33,
+        "region":  "Europe"
+    },
+    {
+        "code":  "GF",
+        "name":  "French Guiana",
+        "capital":  "Cayenne",
+        "flagAssetOrUrl":  "assets/flags/gf.png",
+        "latitude":  4.94,
+        "longitude":  -52.33,
+        "region":  "Americas"
+    },
+    {
+        "code":  "PF",
+        "name":  "French Polynesia",
+        "capital":  "Papeetē",
+        "flagAssetOrUrl":  "assets/flags/pf.png",
+        "latitude":  -17.53,
+        "longitude":  -149.56,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "TF",
+        "name":  "French Southern and Antarctic Lands",
+        "capital":  "Port-aux-Français",
+        "flagAssetOrUrl":  "assets/flags/tf.png",
+        "latitude":  48.81,
+        "longitude":  -1.4,
+        "region":  "Antarctic"
+    },
+    {
+        "code":  "GA",
+        "name":  "Gabon",
+        "capital":  "Libreville",
+        "flagAssetOrUrl":  "assets/flags/ga.png",
+        "latitude":  0.38,
+        "longitude":  9.45,
+        "region":  "Africa"
+    },
+    {
+        "code":  "GM",
+        "name":  "Gambia",
+        "capital":  "Banjul",
+        "flagAssetOrUrl":  "assets/flags/gm.png",
+        "latitude":  13.45,
+        "longitude":  -16.57,
+        "region":  "Africa"
+    },
+    {
+        "code":  "GE",
+        "name":  "Georgia",
+        "capital":  "Tbilisi",
+        "flagAssetOrUrl":  "assets/flags/ge.png",
+        "latitude":  41.68,
+        "longitude":  44.83,
+        "region":  "Asia"
+    },
+    {
+        "code":  "DE",
+        "name":  "Germany",
+        "capital":  "Berlin",
+        "flagAssetOrUrl":  "assets/flags/de.png",
+        "latitude":  52.52,
+        "longitude":  13.4,
+        "region":  "Europe"
+    },
+    {
+        "code":  "GH",
+        "name":  "Ghana",
+        "capital":  "Accra",
+        "flagAssetOrUrl":  "assets/flags/gh.png",
+        "latitude":  5.55,
+        "longitude":  -0.22,
+        "region":  "Africa"
+    },
+    {
+        "code":  "GI",
+        "name":  "Gibraltar",
+        "capital":  "Gibraltar",
+        "flagAssetOrUrl":  "assets/flags/gi.png",
+        "latitude":  36.13,
+        "longitude":  -5.35,
+        "region":  "Europe"
+    },
+    {
+        "code":  "GR",
+        "name":  "Greece",
+        "capital":  "Athens",
+        "flagAssetOrUrl":  "assets/flags/gr.png",
+        "latitude":  37.98,
+        "longitude":  23.73,
+        "region":  "Europe"
+    },
+    {
+        "code":  "GL",
+        "name":  "Greenland",
+        "capital":  "Nuuk",
+        "flagAssetOrUrl":  "assets/flags/gl.png",
+        "latitude":  64.18,
+        "longitude":  -51.75,
+        "region":  "Americas"
+    },
+    {
+        "code":  "GD",
+        "name":  "Grenada",
+        "capital":  "St. George\u0027s",
+        "flagAssetOrUrl":  "assets/flags/gd.png",
+        "latitude":  32.38,
+        "longitude":  -64.68,
+        "region":  "Americas"
+    },
+    {
+        "code":  "GP",
+        "name":  "Guadeloupe",
+        "capital":  "Basse-Terre",
+        "flagAssetOrUrl":  "assets/flags/gp.png",
+        "latitude":  16.03,
+        "longitude":  -61.73,
+        "region":  "Americas"
+    },
+    {
+        "code":  "GU",
+        "name":  "Guam",
+        "capital":  "Hagåtña",
+        "flagAssetOrUrl":  "assets/flags/gu.png",
+        "latitude":  13.48,
+        "longitude":  144.75,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "GT",
+        "name":  "Guatemala",
+        "capital":  "Guatemala City",
+        "flagAssetOrUrl":  "assets/flags/gt.png",
+        "latitude":  14.62,
+        "longitude":  -90.52,
+        "region":  "Americas"
+    },
+    {
+        "code":  "GG",
+        "name":  "Guernsey",
+        "capital":  "St. Peter Port",
+        "flagAssetOrUrl":  "assets/flags/gg.png",
+        "latitude":  49.45,
+        "longitude":  -2.54,
+        "region":  "Europe"
+    },
+    {
+        "code":  "GN",
+        "name":  "Guinea",
+        "capital":  "Conakry",
+        "flagAssetOrUrl":  "assets/flags/gn.png",
+        "latitude":  9.5,
+        "longitude":  -13.7,
+        "region":  "Africa"
+    },
+    {
+        "code":  "GW",
+        "name":  "Guinea-Bissau",
+        "capital":  "Bissau",
+        "flagAssetOrUrl":  "assets/flags/gw.png",
+        "latitude":  11.85,
+        "longitude":  -15.58,
+        "region":  "Africa"
+    },
+    {
+        "code":  "GY",
+        "name":  "Guyana",
+        "capital":  "Georgetown",
+        "flagAssetOrUrl":  "assets/flags/gy.png",
+        "latitude":  6.8,
+        "longitude":  -58.15,
+        "region":  "Americas"
+    },
+    {
+        "code":  "HT",
+        "name":  "Haiti",
+        "capital":  "Port-au-Prince",
+        "flagAssetOrUrl":  "assets/flags/ht.png",
+        "latitude":  18.53,
+        "longitude":  -72.33,
+        "region":  "Americas"
+    },
+    {
+        "code":  "HM",
+        "name":  "Heard Island and McDonald Islands",
+        "capital":  "N/A",
+        "flagAssetOrUrl":  "assets/flags/hm.png",
+        "latitude":  -53.0818,
+        "longitude":  73.5042,
+        "region":  "Antarctic"
+    },
+    {
+        "code":  "HN",
+        "name":  "Honduras",
+        "capital":  "Tegucigalpa",
+        "flagAssetOrUrl":  "assets/flags/hn.png",
+        "latitude":  14.1,
+        "longitude":  -87.22,
+        "region":  "Americas"
+    },
+    {
+        "code":  "HK",
+        "name":  "Hong Kong",
+        "capital":  "City of Victoria",
+        "flagAssetOrUrl":  "assets/flags/hk.png",
+        "latitude":  22.267,
+        "longitude":  114.188,
+        "region":  "Asia"
+    },
+    {
+        "code":  "HU",
+        "name":  "Hungary",
+        "capital":  "Budapest",
+        "flagAssetOrUrl":  "assets/flags/hu.png",
+        "latitude":  47.5,
+        "longitude":  19.08,
+        "region":  "Europe"
+    },
+    {
+        "code":  "IS",
+        "name":  "Iceland",
+        "capital":  "Reykjavik",
+        "flagAssetOrUrl":  "assets/flags/is.png",
+        "latitude":  64.15,
+        "longitude":  -21.95,
+        "region":  "Europe"
+    },
+    {
+        "code":  "IN",
+        "name":  "India",
+        "capital":  "New Delhi",
+        "flagAssetOrUrl":  "assets/flags/in.png",
+        "latitude":  28.6,
+        "longitude":  77.2,
+        "region":  "Asia"
+    },
+    {
+        "code":  "ID",
+        "name":  "Indonesia",
+        "capital":  "Jakarta",
+        "flagAssetOrUrl":  "assets/flags/id.png",
+        "latitude":  -6.17,
+        "longitude":  106.82,
+        "region":  "Asia"
+    },
+    {
+        "code":  "IR",
+        "name":  "Iran",
+        "capital":  "Tehran",
+        "flagAssetOrUrl":  "assets/flags/ir.png",
+        "latitude":  35.7,
+        "longitude":  51.42,
+        "region":  "Asia"
+    },
+    {
+        "code":  "IQ",
+        "name":  "Iraq",
+        "capital":  "Baghdad",
+        "flagAssetOrUrl":  "assets/flags/iq.png",
+        "latitude":  33.33,
+        "longitude":  44.4,
+        "region":  "Asia"
+    },
+    {
+        "code":  "IE",
+        "name":  "Ireland",
+        "capital":  "Dublin",
+        "flagAssetOrUrl":  "assets/flags/ie.png",
+        "latitude":  53.32,
+        "longitude":  -6.23,
+        "region":  "Europe"
+    },
+    {
+        "code":  "IM",
+        "name":  "Isle of Man",
+        "capital":  "Douglas",
+        "flagAssetOrUrl":  "assets/flags/im.png",
+        "latitude":  54.15,
+        "longitude":  -4.48,
+        "region":  "Europe"
+    },
+    {
+        "code":  "IT",
+        "name":  "Italy",
+        "capital":  "Rome",
+        "flagAssetOrUrl":  "assets/flags/it.png",
+        "latitude":  41.9,
+        "longitude":  12.48,
+        "region":  "Europe"
+    },
+    {
+        "code":  "CI",
+        "name":  "Ivory Coast",
+        "capital":  "Yamoussoukro",
+        "flagAssetOrUrl":  "assets/flags/ci.png",
+        "latitude":  6.82,
+        "longitude":  -5.27,
+        "region":  "Africa"
+    },
+    {
+        "code":  "JM",
+        "name":  "Jamaica",
+        "capital":  "Kingston",
+        "flagAssetOrUrl":  "assets/flags/jm.png",
+        "latitude":  17.99702,
+        "longitude":  -76.79358,
+        "region":  "Americas"
+    },
+    {
+        "code":  "JP",
+        "name":  "Japan",
+        "capital":  "Tokyo",
+        "flagAssetOrUrl":  "assets/flags/jp.png",
+        "latitude":  35.68,
+        "longitude":  139.75,
+        "region":  "Asia"
+    },
+    {
+        "code":  "JE",
+        "name":  "Jersey",
+        "capital":  "Saint Helier",
+        "flagAssetOrUrl":  "assets/flags/je.png",
+        "latitude":  49.18,
+        "longitude":  -2.1,
+        "region":  "Europe"
+    },
+    {
+        "code":  "JO",
+        "name":  "Jordan",
+        "capital":  "Amman",
+        "flagAssetOrUrl":  "assets/flags/jo.png",
+        "latitude":  31.95,
+        "longitude":  35.93,
+        "region":  "Asia"
+    },
+    {
+        "code":  "KZ",
+        "name":  "Kazakhstan",
+        "capital":  "Astana",
+        "flagAssetOrUrl":  "assets/flags/kz.png",
+        "latitude":  51.16,
+        "longitude":  71.45,
+        "region":  "Asia"
+    },
+    {
+        "code":  "KE",
+        "name":  "Kenya",
+        "capital":  "Nairobi",
+        "flagAssetOrUrl":  "assets/flags/ke.png",
+        "latitude":  -1.28,
+        "longitude":  36.82,
+        "region":  "Africa"
+    },
+    {
+        "code":  "KI",
+        "name":  "Kiribati",
+        "capital":  "South Tarawa",
+        "flagAssetOrUrl":  "assets/flags/ki.png",
+        "latitude":  1.33,
+        "longitude":  172.98,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "XK",
+        "name":  "Kosovo",
+        "capital":  "Pristina",
+        "flagAssetOrUrl":  "assets/flags/xk.png",
+        "latitude":  42.67,
+        "longitude":  21.17,
+        "region":  "Europe"
+    },
+    {
+        "code":  "KW",
+        "name":  "Kuwait",
+        "capital":  "Kuwait City",
+        "flagAssetOrUrl":  "assets/flags/kw.png",
+        "latitude":  29.37,
+        "longitude":  47.97,
+        "region":  "Asia"
+    },
+    {
+        "code":  "KG",
+        "name":  "Kyrgyzstan",
+        "capital":  "Bishkek",
+        "flagAssetOrUrl":  "assets/flags/kg.png",
+        "latitude":  42.87,
+        "longitude":  74.6,
+        "region":  "Asia"
+    },
+    {
+        "code":  "LA",
+        "name":  "Laos",
+        "capital":  "Vientiane",
+        "flagAssetOrUrl":  "assets/flags/la.png",
+        "latitude":  17.97,
+        "longitude":  102.6,
+        "region":  "Asia"
+    },
+    {
+        "code":  "LV",
+        "name":  "Latvia",
+        "capital":  "Riga",
+        "flagAssetOrUrl":  "assets/flags/lv.png",
+        "latitude":  56.95,
+        "longitude":  24.1,
+        "region":  "Europe"
+    },
+    {
+        "code":  "LB",
+        "name":  "Lebanon",
+        "capital":  "Beirut",
+        "flagAssetOrUrl":  "assets/flags/lb.png",
+        "latitude":  33.87,
+        "longitude":  35.5,
+        "region":  "Asia"
+    },
+    {
+        "code":  "LS",
+        "name":  "Lesotho",
+        "capital":  "Maseru",
+        "flagAssetOrUrl":  "assets/flags/ls.png",
+        "latitude":  -29.32,
+        "longitude":  27.48,
+        "region":  "Africa"
+    },
+    {
+        "code":  "LR",
+        "name":  "Liberia",
+        "capital":  "Monrovia",
+        "flagAssetOrUrl":  "assets/flags/lr.png",
+        "latitude":  6.3,
+        "longitude":  -10.8,
+        "region":  "Africa"
+    },
+    {
+        "code":  "LY",
+        "name":  "Libya",
+        "capital":  "Tripoli",
+        "flagAssetOrUrl":  "assets/flags/ly.png",
+        "latitude":  32.88,
+        "longitude":  13.17,
+        "region":  "Africa"
+    },
+    {
+        "code":  "LI",
+        "name":  "Liechtenstein",
+        "capital":  "Vaduz",
+        "flagAssetOrUrl":  "assets/flags/li.png",
+        "latitude":  47.13,
+        "longitude":  9.52,
+        "region":  "Europe"
+    },
+    {
+        "code":  "LT",
+        "name":  "Lithuania",
+        "capital":  "Vilnius",
+        "flagAssetOrUrl":  "assets/flags/lt.png",
+        "latitude":  54.68,
+        "longitude":  25.32,
+        "region":  "Europe"
+    },
+    {
+        "code":  "LU",
+        "name":  "Luxembourg",
+        "capital":  "Luxembourg",
+        "flagAssetOrUrl":  "assets/flags/lu.png",
+        "latitude":  49.6,
+        "longitude":  6.12,
+        "region":  "Europe"
+    },
+    {
+        "code":  "MO",
+        "name":  "Macau",
+        "capital":  "N/A",
+        "flagAssetOrUrl":  "assets/flags/mo.png",
+        "latitude":  22.16666666,
+        "longitude":  113.55,
+        "region":  "Asia"
+    },
+    {
+        "code":  "MG",
+        "name":  "Madagascar",
+        "capital":  "Antananarivo",
+        "flagAssetOrUrl":  "assets/flags/mg.png",
+        "latitude":  -18.92,
+        "longitude":  47.52,
+        "region":  "Africa"
+    },
+    {
+        "code":  "MW",
+        "name":  "Malawi",
+        "capital":  "Lilongwe",
+        "flagAssetOrUrl":  "assets/flags/mw.png",
+        "latitude":  -13.97,
+        "longitude":  33.78,
+        "region":  "Africa"
+    },
+    {
+        "code":  "MY",
+        "name":  "Malaysia",
+        "capital":  "Kuala Lumpur",
+        "flagAssetOrUrl":  "assets/flags/my.png",
+        "latitude":  3.17,
+        "longitude":  101.7,
+        "region":  "Asia"
+    },
+    {
+        "code":  "MV",
+        "name":  "Maldives",
+        "capital":  "Malé",
+        "flagAssetOrUrl":  "assets/flags/mv.png",
+        "latitude":  4.17,
+        "longitude":  73.51,
+        "region":  "Asia"
+    },
+    {
+        "code":  "ML",
+        "name":  "Mali",
+        "capital":  "Bamako",
+        "flagAssetOrUrl":  "assets/flags/ml.png",
+        "latitude":  12.65,
+        "longitude":  -8,
+        "region":  "Africa"
+    },
+    {
+        "code":  "MT",
+        "name":  "Malta",
+        "capital":  "Valletta",
+        "flagAssetOrUrl":  "assets/flags/mt.png",
+        "latitude":  35.88,
+        "longitude":  14.5,
+        "region":  "Europe"
+    },
+    {
+        "code":  "MH",
+        "name":  "Marshall Islands",
+        "capital":  "Majuro",
+        "flagAssetOrUrl":  "assets/flags/mh.png",
+        "latitude":  7.1,
+        "longitude":  171.38,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "MQ",
+        "name":  "Martinique",
+        "capital":  "Fort-de-France",
+        "flagAssetOrUrl":  "assets/flags/mq.png",
+        "latitude":  14.6,
+        "longitude":  -61.08,
+        "region":  "Americas"
+    },
+    {
+        "code":  "MR",
+        "name":  "Mauritania",
+        "capital":  "Nouakchott",
+        "flagAssetOrUrl":  "assets/flags/mr.png",
+        "latitude":  18.07,
+        "longitude":  -15.97,
+        "region":  "Africa"
+    },
+    {
+        "code":  "MU",
+        "name":  "Mauritius",
+        "capital":  "Port Louis",
+        "flagAssetOrUrl":  "assets/flags/mu.png",
+        "latitude":  -20.15,
+        "longitude":  57.48,
+        "region":  "Africa"
+    },
+    {
+        "code":  "YT",
+        "name":  "Mayotte",
+        "capital":  "Mamoudzou",
+        "flagAssetOrUrl":  "assets/flags/yt.png",
+        "latitude":  -12.78,
+        "longitude":  45.22,
+        "region":  "Africa"
+    },
+    {
+        "code":  "MX",
+        "name":  "Mexico",
+        "capital":  "Mexico City",
+        "flagAssetOrUrl":  "assets/flags/mx.png",
+        "latitude":  19.43,
+        "longitude":  -99.13,
+        "region":  "Americas"
+    },
+    {
+        "code":  "FM",
+        "name":  "Micronesia",
+        "capital":  "Palikir",
+        "flagAssetOrUrl":  "assets/flags/fm.png",
+        "latitude":  6.92,
+        "longitude":  158.15,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "MD",
+        "name":  "Moldova",
+        "capital":  "Chișinău",
+        "flagAssetOrUrl":  "assets/flags/md.png",
+        "latitude":  47.01,
+        "longitude":  28.9,
+        "region":  "Europe"
+    },
+    {
+        "code":  "MC",
+        "name":  "Monaco",
+        "capital":  "Monaco",
+        "flagAssetOrUrl":  "assets/flags/mc.png",
+        "latitude":  43.73,
+        "longitude":  7.42,
+        "region":  "Europe"
+    },
+    {
+        "code":  "MN",
+        "name":  "Mongolia",
+        "capital":  "Ulan Bator",
+        "flagAssetOrUrl":  "assets/flags/mn.png",
+        "latitude":  47.92,
+        "longitude":  106.91,
+        "region":  "Asia"
+    },
+    {
+        "code":  "ME",
+        "name":  "Montenegro",
+        "capital":  "Podgorica",
+        "flagAssetOrUrl":  "assets/flags/me.png",
+        "latitude":  42.43,
+        "longitude":  19.27,
+        "region":  "Europe"
+    },
+    {
+        "code":  "MS",
+        "name":  "Montserrat",
+        "capital":  "Plymouth",
+        "flagAssetOrUrl":  "assets/flags/ms.png",
+        "latitude":  16.7,
+        "longitude":  -62.22,
+        "region":  "Americas"
+    },
+    {
+        "code":  "MA",
+        "name":  "Morocco",
+        "capital":  "Rabat",
+        "flagAssetOrUrl":  "assets/flags/ma.png",
+        "latitude":  34.02,
+        "longitude":  -6.82,
+        "region":  "Africa"
+    },
+    {
+        "code":  "MZ",
+        "name":  "Mozambique",
+        "capital":  "Maputo",
+        "flagAssetOrUrl":  "assets/flags/mz.png",
+        "latitude":  -25.95,
+        "longitude":  32.58,
+        "region":  "Africa"
+    },
+    {
+        "code":  "MM",
+        "name":  "Myanmar",
+        "capital":  "Naypyidaw",
+        "flagAssetOrUrl":  "assets/flags/mm.png",
+        "latitude":  19.76,
+        "longitude":  96.07,
+        "region":  "Asia"
+    },
+    {
+        "code":  "NA",
+        "name":  "Namibia",
+        "capital":  "Windhoek",
+        "flagAssetOrUrl":  "assets/flags/na.png",
+        "latitude":  -22.57,
+        "longitude":  17.08,
+        "region":  "Africa"
+    },
+    {
+        "code":  "NR",
+        "name":  "Nauru",
+        "capital":  "Yaren",
+        "flagAssetOrUrl":  "assets/flags/nr.png",
+        "latitude":  -0.55,
+        "longitude":  166.92,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "NP",
+        "name":  "Nepal",
+        "capital":  "Kathmandu",
+        "flagAssetOrUrl":  "assets/flags/np.png",
+        "latitude":  27.72,
+        "longitude":  85.32,
+        "region":  "Asia"
+    },
+    {
+        "code":  "NL",
+        "name":  "Netherlands",
+        "capital":  "Amsterdam",
+        "flagAssetOrUrl":  "assets/flags/nl.png",
+        "latitude":  52.35,
+        "longitude":  4.92,
+        "region":  "Europe"
+    },
+    {
+        "code":  "NC",
+        "name":  "New Caledonia",
+        "capital":  "Nouméa",
+        "flagAssetOrUrl":  "assets/flags/nc.png",
+        "latitude":  -22.27,
+        "longitude":  166.45,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "NZ",
+        "name":  "New Zealand",
+        "capital":  "Wellington",
+        "flagAssetOrUrl":  "assets/flags/nz.png",
+        "latitude":  -41.3,
+        "longitude":  174.78,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "NI",
+        "name":  "Nicaragua",
+        "capital":  "Managua",
+        "flagAssetOrUrl":  "assets/flags/ni.png",
+        "latitude":  12.13,
+        "longitude":  -86.25,
+        "region":  "Americas"
+    },
+    {
+        "code":  "NE",
+        "name":  "Niger",
+        "capital":  "Niamey",
+        "flagAssetOrUrl":  "assets/flags/ne.png",
+        "latitude":  13.52,
+        "longitude":  2.12,
+        "region":  "Africa"
+    },
+    {
+        "code":  "NG",
+        "name":  "Nigeria",
+        "capital":  "Abuja",
+        "flagAssetOrUrl":  "assets/flags/ng.png",
+        "latitude":  9.08,
+        "longitude":  7.53,
+        "region":  "Africa"
+    },
+    {
+        "code":  "NU",
+        "name":  "Niue",
+        "capital":  "Alofi",
+        "flagAssetOrUrl":  "assets/flags/nu.png",
+        "latitude":  -19.02,
+        "longitude":  -169.92,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "NF",
+        "name":  "Norfolk Island",
+        "capital":  "Kingston",
+        "flagAssetOrUrl":  "assets/flags/nf.png",
+        "latitude":  -29.05,
+        "longitude":  167.97,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "KP",
+        "name":  "North Korea",
+        "capital":  "Pyongyang",
+        "flagAssetOrUrl":  "assets/flags/kp.png",
+        "latitude":  39.02,
+        "longitude":  125.75,
+        "region":  "Asia"
+    },
+    {
+        "code":  "MK",
+        "name":  "North Macedonia",
+        "capital":  "Skopje",
+        "flagAssetOrUrl":  "assets/flags/mk.png",
+        "latitude":  42,
+        "longitude":  21.43,
+        "region":  "Europe"
+    },
+    {
+        "code":  "MP",
+        "name":  "Northern Mariana Islands",
+        "capital":  "Saipan",
+        "flagAssetOrUrl":  "assets/flags/mp.png",
+        "latitude":  15.2,
+        "longitude":  145.75,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "NO",
+        "name":  "Norway",
+        "capital":  "Oslo",
+        "flagAssetOrUrl":  "assets/flags/no.png",
+        "latitude":  59.92,
+        "longitude":  10.75,
+        "region":  "Europe"
+    },
+    {
+        "code":  "OM",
+        "name":  "Oman",
+        "capital":  "Muscat",
+        "flagAssetOrUrl":  "assets/flags/om.png",
+        "latitude":  23.62,
+        "longitude":  58.58,
+        "region":  "Asia"
+    },
+    {
+        "code":  "PK",
+        "name":  "Pakistan",
+        "capital":  "Islamabad",
+        "flagAssetOrUrl":  "assets/flags/pk.png",
+        "latitude":  33.68,
+        "longitude":  73.05,
+        "region":  "Asia"
+    },
+    {
+        "code":  "PW",
+        "name":  "Palau",
+        "capital":  "Ngerulmud",
+        "flagAssetOrUrl":  "assets/flags/pw.png",
+        "latitude":  7.5,
+        "longitude":  134.62,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "PS",
+        "name":  "Palestine",
+        "capital":  "Qudus",
+        "flagAssetOrUrl":  "assets/flags/ps.png",
+        "latitude":  31.9,
+        "longitude":  35.2,
+        "region":  "Asia"
+    },
+    {
+        "code":  "PA",
+        "name":  "Panama",
+        "capital":  "Panama City",
+        "flagAssetOrUrl":  "assets/flags/pa.png",
+        "latitude":  8.97,
+        "longitude":  -79.53,
+        "region":  "Americas"
+    },
+    {
+        "code":  "PG",
+        "name":  "Papua New Guinea",
+        "capital":  "Port Moresby",
+        "flagAssetOrUrl":  "assets/flags/pg.png",
+        "latitude":  -9.45,
+        "longitude":  147.18,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "PY",
+        "name":  "Paraguay",
+        "capital":  "Asunción",
+        "flagAssetOrUrl":  "assets/flags/py.png",
+        "latitude":  -25.28,
+        "longitude":  -57.57,
+        "region":  "Americas"
+    },
+    {
+        "code":  "PE",
+        "name":  "Peru",
+        "capital":  "Lima",
+        "flagAssetOrUrl":  "assets/flags/pe.png",
+        "latitude":  -12.05,
+        "longitude":  -77.05,
+        "region":  "Americas"
+    },
+    {
+        "code":  "PH",
+        "name":  "Philippines",
+        "capital":  "Manila",
+        "flagAssetOrUrl":  "assets/flags/ph.png",
+        "latitude":  14.6,
+        "longitude":  120.97,
+        "region":  "Asia"
+    },
+    {
+        "code":  "PN",
+        "name":  "Pitcairn Islands",
+        "capital":  "Adamstown",
+        "flagAssetOrUrl":  "assets/flags/pn.png",
+        "latitude":  -25.07,
+        "longitude":  -130.08,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "PL",
+        "name":  "Poland",
+        "capital":  "Warsaw",
+        "flagAssetOrUrl":  "assets/flags/pl.png",
+        "latitude":  52.25,
+        "longitude":  21,
+        "region":  "Europe"
+    },
+    {
+        "code":  "PT",
+        "name":  "Portugal",
+        "capital":  "Lisbon",
+        "flagAssetOrUrl":  "assets/flags/pt.png",
+        "latitude":  38.72,
+        "longitude":  -9.13,
+        "region":  "Europe"
+    },
+    {
+        "code":  "PR",
+        "name":  "Puerto Rico",
+        "capital":  "San Juan",
+        "flagAssetOrUrl":  "assets/flags/pr.png",
+        "latitude":  18.47,
+        "longitude":  -66.12,
+        "region":  "Americas"
+    },
+    {
+        "code":  "QA",
+        "name":  "Qatar",
+        "capital":  "Doha",
+        "flagAssetOrUrl":  "assets/flags/qa.png",
+        "latitude":  25.28,
+        "longitude":  51.53,
+        "region":  "Asia"
+    },
+    {
+        "code":  "RE",
+        "name":  "Réunion",
+        "capital":  "Saint-Denis",
+        "flagAssetOrUrl":  "assets/flags/re.png",
+        "latitude":  -20.88,
+        "longitude":  55.45,
+        "region":  "Africa"
+    },
+    {
+        "code":  "CG",
+        "name":  "Republic of the Congo",
+        "capital":  "Brazzaville",
+        "flagAssetOrUrl":  "assets/flags/cg.png",
+        "latitude":  -4.25,
+        "longitude":  15.28,
+        "region":  "Africa"
+    },
+    {
+        "code":  "RO",
+        "name":  "Romania",
+        "capital":  "Bucharest",
+        "flagAssetOrUrl":  "assets/flags/ro.png",
+        "latitude":  44.43,
+        "longitude":  26.1,
+        "region":  "Europe"
+    },
+    {
+        "code":  "RU",
+        "name":  "Russia",
+        "capital":  "Moscow",
+        "flagAssetOrUrl":  "assets/flags/ru.png",
+        "latitude":  55.75,
+        "longitude":  37.6,
+        "region":  "Europe"
+    },
+    {
+        "code":  "RW",
+        "name":  "Rwanda",
+        "capital":  "Kigali",
+        "flagAssetOrUrl":  "assets/flags/rw.png",
+        "latitude":  -1.95,
+        "longitude":  30.05,
+        "region":  "Africa"
+    },
+    {
+        "code":  "ST",
+        "name":  "São Tomé and Príncipe",
+        "capital":  "São Tomé",
+        "flagAssetOrUrl":  "assets/flags/st.png",
+        "latitude":  0.34,
+        "longitude":  6.73,
+        "region":  "Africa"
+    },
+    {
+        "code":  "BL",
+        "name":  "Saint Barthélemy",
+        "capital":  "Gustavia",
+        "flagAssetOrUrl":  "assets/flags/bl.png",
+        "latitude":  17.88,
+        "longitude":  -62.85,
+        "region":  "Americas"
+    },
+    {
+        "code":  "SH",
+        "name":  "Saint Helena, Ascension and Tristan da Cunha",
+        "capital":  "Jamestown",
+        "flagAssetOrUrl":  "assets/flags/sh.png",
+        "latitude":  -15.93,
+        "longitude":  -5.72,
+        "region":  "Africa"
+    },
+    {
+        "code":  "KN",
+        "name":  "Saint Kitts and Nevis",
+        "capital":  "Basseterre",
+        "flagAssetOrUrl":  "assets/flags/kn.png",
+        "latitude":  17.3,
+        "longitude":  -62.72,
+        "region":  "Americas"
+    },
+    {
+        "code":  "LC",
+        "name":  "Saint Lucia",
+        "capital":  "Castries",
+        "flagAssetOrUrl":  "assets/flags/lc.png",
+        "latitude":  14,
+        "longitude":  -61,
+        "region":  "Americas"
+    },
+    {
+        "code":  "MF",
+        "name":  "Saint Martin",
+        "capital":  "Marigot",
+        "flagAssetOrUrl":  "assets/flags/mf.png",
+        "latitude":  18.07,
+        "longitude":  -63.08,
+        "region":  "Americas"
+    },
+    {
+        "code":  "PM",
+        "name":  "Saint Pierre and Miquelon",
+        "capital":  "Saint-Pierre",
+        "flagAssetOrUrl":  "assets/flags/pm.png",
+        "latitude":  46.77,
+        "longitude":  -56.18,
+        "region":  "Americas"
+    },
+    {
+        "code":  "VC",
+        "name":  "Saint Vincent and the Grenadines",
+        "capital":  "Kingstown",
+        "flagAssetOrUrl":  "assets/flags/vc.png",
+        "latitude":  13.13,
+        "longitude":  -61.22,
+        "region":  "Americas"
+    },
+    {
+        "code":  "WS",
+        "name":  "Samoa",
+        "capital":  "Apia",
+        "flagAssetOrUrl":  "assets/flags/ws.png",
+        "latitude":  -13.82,
+        "longitude":  -171.77,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "SM",
+        "name":  "San Marino",
+        "capital":  "City of San Marino",
+        "flagAssetOrUrl":  "assets/flags/sm.png",
+        "latitude":  43.94,
+        "longitude":  12.45,
+        "region":  "Europe"
+    },
+    {
+        "code":  "SA",
+        "name":  "Saudi Arabia",
+        "capital":  "Riyadh",
+        "flagAssetOrUrl":  "assets/flags/sa.png",
+        "latitude":  24.65,
+        "longitude":  46.7,
+        "region":  "Asia"
+    },
+    {
+        "code":  "SN",
+        "name":  "Senegal",
+        "capital":  "Dakar",
+        "flagAssetOrUrl":  "assets/flags/sn.png",
+        "latitude":  14.73,
+        "longitude":  -17.63,
+        "region":  "Africa"
+    },
+    {
+        "code":  "RS",
+        "name":  "Serbia",
+        "capital":  "Belgrade",
+        "flagAssetOrUrl":  "assets/flags/rs.png",
+        "latitude":  44.83,
+        "longitude":  20.5,
+        "region":  "Europe"
+    },
+    {
+        "code":  "SC",
+        "name":  "Seychelles",
+        "capital":  "Victoria",
+        "flagAssetOrUrl":  "assets/flags/sc.png",
+        "latitude":  -4.62,
+        "longitude":  55.45,
+        "region":  "Africa"
+    },
+    {
+        "code":  "SL",
+        "name":  "Sierra Leone",
+        "capital":  "Freetown",
+        "flagAssetOrUrl":  "assets/flags/sl.png",
+        "latitude":  8.48,
+        "longitude":  -13.23,
+        "region":  "Africa"
+    },
+    {
+        "code":  "SG",
+        "name":  "Singapore",
+        "capital":  "Singapore",
+        "flagAssetOrUrl":  "assets/flags/sg.png",
+        "latitude":  1.28,
+        "longitude":  103.85,
+        "region":  "Asia"
+    },
+    {
+        "code":  "SX",
+        "name":  "Sint Maarten",
+        "capital":  "Philipsburg",
+        "flagAssetOrUrl":  "assets/flags/sx.png",
+        "latitude":  18.02,
+        "longitude":  -63.03,
+        "region":  "Americas"
+    },
+    {
+        "code":  "SK",
+        "name":  "Slovakia",
+        "capital":  "Bratislava",
+        "flagAssetOrUrl":  "assets/flags/sk.png",
+        "latitude":  48.15,
+        "longitude":  17.12,
+        "region":  "Europe"
+    },
+    {
+        "code":  "SI",
+        "name":  "Slovenia",
+        "capital":  "Ljubljana",
+        "flagAssetOrUrl":  "assets/flags/si.png",
+        "latitude":  46.05,
+        "longitude":  14.52,
+        "region":  "Europe"
+    },
+    {
+        "code":  "SB",
+        "name":  "Solomon Islands",
+        "capital":  "Honiara",
+        "flagAssetOrUrl":  "assets/flags/sb.png",
+        "latitude":  -9.43,
+        "longitude":  159.95,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "SO",
+        "name":  "Somalia",
+        "capital":  "Mogadishu",
+        "flagAssetOrUrl":  "assets/flags/so.png",
+        "latitude":  2.07,
+        "longitude":  45.33,
+        "region":  "Africa"
+    },
+    {
+        "code":  "ZA",
+        "name":  "South Africa",
+        "capital":  "Pretoria",
+        "flagAssetOrUrl":  "assets/flags/za.png",
+        "latitude":  -25.7,
+        "longitude":  28.22,
+        "region":  "Africa"
+    },
+    {
+        "code":  "GS",
+        "name":  "South Georgia",
+        "capital":  "King Edward Point",
+        "flagAssetOrUrl":  "assets/flags/gs.png",
+        "latitude":  -54.28,
+        "longitude":  -36.5,
+        "region":  "Antarctic"
+    },
+    {
+        "code":  "KR",
+        "name":  "South Korea",
+        "capital":  "Seoul",
+        "flagAssetOrUrl":  "assets/flags/kr.png",
+        "latitude":  37.55,
+        "longitude":  126.98,
+        "region":  "Asia"
+    },
+    {
+        "code":  "SS",
+        "name":  "South Sudan",
+        "capital":  "Juba",
+        "flagAssetOrUrl":  "assets/flags/ss.png",
+        "latitude":  4.85,
+        "longitude":  31.62,
+        "region":  "Africa"
+    },
+    {
+        "code":  "ES",
+        "name":  "Spain",
+        "capital":  "Madrid",
+        "flagAssetOrUrl":  "assets/flags/es.png",
+        "latitude":  40.4,
+        "longitude":  -3.68,
+        "region":  "Europe"
+    },
+    {
+        "code":  "LK",
+        "name":  "Sri Lanka",
+        "capital":  "Sri Jayawardenepura Kotte",
+        "flagAssetOrUrl":  "assets/flags/lk.png",
+        "latitude":  6.89,
+        "longitude":  79.9,
+        "region":  "Asia"
+    },
+    {
+        "code":  "SD",
+        "name":  "Sudan",
+        "capital":  "Khartoum",
+        "flagAssetOrUrl":  "assets/flags/sd.png",
+        "latitude":  15.6,
+        "longitude":  32.53,
+        "region":  "Africa"
+    },
+    {
+        "code":  "SR",
+        "name":  "Suriname",
+        "capital":  "Paramaribo",
+        "flagAssetOrUrl":  "assets/flags/sr.png",
+        "latitude":  5.83,
+        "longitude":  -55.17,
+        "region":  "Americas"
+    },
+    {
+        "code":  "SJ",
+        "name":  "Svalbard and Jan Mayen",
+        "capital":  "Longyearbyen",
+        "flagAssetOrUrl":  "assets/flags/sj.png",
+        "latitude":  78.22,
+        "longitude":  15.63,
+        "region":  "Europe"
+    },
+    {
+        "code":  "SE",
+        "name":  "Sweden",
+        "capital":  "Stockholm",
+        "flagAssetOrUrl":  "assets/flags/se.png",
+        "latitude":  59.33,
+        "longitude":  18.05,
+        "region":  "Europe"
+    },
+    {
+        "code":  "CH",
+        "name":  "Switzerland",
+        "capital":  "Bern",
+        "flagAssetOrUrl":  "assets/flags/ch.png",
+        "latitude":  46.92,
+        "longitude":  7.47,
+        "region":  "Europe"
+    },
+    {
+        "code":  "SY",
+        "name":  "Syria",
+        "capital":  "Damascus",
+        "flagAssetOrUrl":  "assets/flags/sy.png",
+        "latitude":  33.5,
+        "longitude":  36.3,
+        "region":  "Asia"
+    },
+    {
+        "code":  "TW",
+        "name":  "Taiwan",
+        "capital":  "Taipei",
+        "flagAssetOrUrl":  "assets/flags/tw.png",
+        "latitude":  25.03,
+        "longitude":  121.52,
+        "region":  "Asia"
+    },
+    {
+        "code":  "TJ",
+        "name":  "Tajikistan",
+        "capital":  "Dushanbe",
+        "flagAssetOrUrl":  "assets/flags/tj.png",
+        "latitude":  38.55,
+        "longitude":  68.77,
+        "region":  "Asia"
+    },
+    {
+        "code":  "TZ",
+        "name":  "Tanzania",
+        "capital":  "Dodoma",
+        "flagAssetOrUrl":  "assets/flags/tz.png",
+        "latitude":  -6.16,
+        "longitude":  35.75,
+        "region":  "Africa"
+    },
+    {
+        "code":  "TH",
+        "name":  "Thailand",
+        "capital":  "Bangkok",
+        "flagAssetOrUrl":  "assets/flags/th.png",
+        "latitude":  13.75,
+        "longitude":  100.52,
+        "region":  "Asia"
+    },
+    {
+        "code":  "TL",
+        "name":  "Timor-Leste",
+        "capital":  "Dili",
+        "flagAssetOrUrl":  "assets/flags/tl.png",
+        "latitude":  -8.58,
+        "longitude":  125.6,
+        "region":  "Asia"
+    },
+    {
+        "code":  "TG",
+        "name":  "Togo",
+        "capital":  "Lomé",
+        "flagAssetOrUrl":  "assets/flags/tg.png",
+        "latitude":  6.14,
+        "longitude":  1.21,
+        "region":  "Africa"
+    },
+    {
+        "code":  "TK",
+        "name":  "Tokelau",
+        "capital":  "Fakaofo",
+        "flagAssetOrUrl":  "assets/flags/tk.png",
+        "latitude":  -9.38,
+        "longitude":  -171.22,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "TO",
+        "name":  "Tonga",
+        "capital":  "Nuku\u0027alofa",
+        "flagAssetOrUrl":  "assets/flags/to.png",
+        "latitude":  -21.13,
+        "longitude":  -175.2,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "TT",
+        "name":  "Trinidad and Tobago",
+        "capital":  "Port of Spain",
+        "flagAssetOrUrl":  "assets/flags/tt.png",
+        "latitude":  10.65,
+        "longitude":  -61.52,
+        "region":  "Americas"
+    },
+    {
+        "code":  "TN",
+        "name":  "Tunisia",
+        "capital":  "Tunis",
+        "flagAssetOrUrl":  "assets/flags/tn.png",
+        "latitude":  36.8,
+        "longitude":  10.18,
+        "region":  "Africa"
+    },
+    {
+        "code":  "TR",
+        "name":  "Turkey",
+        "capital":  "Ankara",
+        "flagAssetOrUrl":  "assets/flags/tr.png",
+        "latitude":  39.93,
+        "longitude":  32.87,
+        "region":  "Asia"
+    },
+    {
+        "code":  "TM",
+        "name":  "Turkmenistan",
+        "capital":  "Ashgabat",
+        "flagAssetOrUrl":  "assets/flags/tm.png",
+        "latitude":  37.95,
+        "longitude":  58.38,
+        "region":  "Asia"
+    },
+    {
+        "code":  "TC",
+        "name":  "Turks and Caicos Islands",
+        "capital":  "Cockburn Town",
+        "flagAssetOrUrl":  "assets/flags/tc.png",
+        "latitude":  21.46,
+        "longitude":  -71.14,
+        "region":  "Americas"
+    },
+    {
+        "code":  "TV",
+        "name":  "Tuvalu",
+        "capital":  "Funafuti",
+        "flagAssetOrUrl":  "assets/flags/tv.png",
+        "latitude":  -8.52,
+        "longitude":  179.22,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "UG",
+        "name":  "Uganda",
+        "capital":  "Kampala",
+        "flagAssetOrUrl":  "assets/flags/ug.png",
+        "latitude":  0.32,
+        "longitude":  32.55,
+        "region":  "Africa"
+    },
+    {
+        "code":  "UA",
+        "name":  "Ukraine",
+        "capital":  "Kyiv",
+        "flagAssetOrUrl":  "assets/flags/ua.png",
+        "latitude":  50.43,
+        "longitude":  30.52,
+        "region":  "Europe"
+    },
+    {
+        "code":  "AE",
+        "name":  "United Arab Emirates",
+        "capital":  "Abu Dhabi",
+        "flagAssetOrUrl":  "assets/flags/ae.png",
+        "latitude":  24.47,
+        "longitude":  54.37,
+        "region":  "Asia"
+    },
+    {
+        "code":  "GB",
+        "name":  "United Kingdom",
+        "capital":  "London",
+        "flagAssetOrUrl":  "assets/flags/gb.png",
+        "latitude":  51.5,
+        "longitude":  -0.08,
+        "region":  "Europe"
+    },
+    {
+        "code":  "US",
+        "name":  "United States",
+        "capital":  "Washington, D.C.",
+        "flagAssetOrUrl":  "assets/flags/us.png",
+        "latitude":  38.89,
+        "longitude":  -77.05,
+        "region":  "Americas"
+    },
+    {
+        "code":  "UM",
+        "name":  "United States Minor Outlying Islands",
+        "capital":  "Washington DC",
+        "flagAssetOrUrl":  "assets/flags/um.png",
+        "latitude":  19.3,
+        "longitude":  166.633333,
+        "region":  "Americas"
+    },
+    {
+        "code":  "VI",
+        "name":  "United States Virgin Islands",
+        "capital":  "Charlotte Amalie",
+        "flagAssetOrUrl":  "assets/flags/vi.png",
+        "latitude":  18.35,
+        "longitude":  -64.93,
+        "region":  "Americas"
+    },
+    {
+        "code":  "UY",
+        "name":  "Uruguay",
+        "capital":  "Montevideo",
+        "flagAssetOrUrl":  "assets/flags/uy.png",
+        "latitude":  -34.85,
+        "longitude":  -56.17,
+        "region":  "Americas"
+    },
+    {
+        "code":  "UZ",
+        "name":  "Uzbekistan",
+        "capital":  "Tashkent",
+        "flagAssetOrUrl":  "assets/flags/uz.png",
+        "latitude":  41.32,
+        "longitude":  69.25,
+        "region":  "Asia"
+    },
+    {
+        "code":  "VU",
+        "name":  "Vanuatu",
+        "capital":  "Port Vila",
+        "flagAssetOrUrl":  "assets/flags/vu.png",
+        "latitude":  -17.73,
+        "longitude":  168.32,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "VA",
+        "name":  "Vatican City",
+        "capital":  "Vatican City",
+        "flagAssetOrUrl":  "assets/flags/va.png",
+        "latitude":  41.9,
+        "longitude":  12.45,
+        "region":  "Europe"
+    },
+    {
+        "code":  "VE",
+        "name":  "Venezuela",
+        "capital":  "Caracas",
+        "flagAssetOrUrl":  "assets/flags/ve.png",
+        "latitude":  10.48,
+        "longitude":  -66.87,
+        "region":  "Americas"
+    },
+    {
+        "code":  "VN",
+        "name":  "Vietnam",
+        "capital":  "Hanoi",
+        "flagAssetOrUrl":  "assets/flags/vn.png",
+        "latitude":  21.03,
+        "longitude":  105.85,
+        "region":  "Asia"
+    },
+    {
+        "code":  "WF",
+        "name":  "Wallis and Futuna",
+        "capital":  "Mata-Utu",
+        "flagAssetOrUrl":  "assets/flags/wf.png",
+        "latitude":  -13.95,
+        "longitude":  -171.93,
+        "region":  "Oceania"
+    },
+    {
+        "code":  "EH",
+        "name":  "Western Sahara",
+        "capital":  "El Aaiún",
+        "flagAssetOrUrl":  "assets/flags/eh.png",
+        "latitude":  -13.28,
+        "longitude":  27.14,
+        "region":  "Africa"
+    },
+    {
+        "code":  "YE",
+        "name":  "Yemen",
+        "capital":  "Sana\u0027a",
+        "flagAssetOrUrl":  "assets/flags/ye.png",
+        "latitude":  15.37,
+        "longitude":  44.19,
+        "region":  "Asia"
+    },
+    {
+        "code":  "ZM",
+        "name":  "Zambia",
+        "capital":  "Lusaka",
+        "flagAssetOrUrl":  "assets/flags/zm.png",
+        "latitude":  -15.42,
+        "longitude":  28.28,
+        "region":  "Africa"
+    },
+    {
+        "code":  "ZW",
+        "name":  "Zimbabwe",
+        "capital":  "Harare",
+        "flagAssetOrUrl":  "assets/flags/zw.png",
+        "latitude":  -17.82,
+        "longitude":  31.03,
+        "region":  "Africa"
+    }
 ]

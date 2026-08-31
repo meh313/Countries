@@ -81,7 +81,7 @@ class CountryDetailsScreen extends ConsumerWidget {
                 CountryMap(country: country),
                 const SizedBox(height: 12),
                 Text(
-                  'Focused on ${country.capital} at '
+                  'Country-level zoom with capital marker at '
                   '${country.latitude.toStringAsFixed(4)}, '
                   '${country.longitude.toStringAsFixed(4)}.',
                 ),
