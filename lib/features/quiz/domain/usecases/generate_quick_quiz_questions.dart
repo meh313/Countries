@@ -3,8 +3,9 @@ import 'dart:math';
 import '../../../countries/domain/entities/country.dart';
 import '../../../countries/domain/usecases/get_all_countries.dart';
 import '../entities/quick_quiz_question.dart';
+import '../entities/quiz_category.dart';
 
-/// Generates quick capitals quiz questions from the countries catalog.
+/// Generates quick quiz questions from the countries catalog.
 class GenerateQuickQuizQuestions {
   /// Creates the question generator use case.
   GenerateQuickQuizQuestions(
@@ -15,10 +16,11 @@ class GenerateQuickQuizQuestions {
   final GetAllCountries _getAllCountries;
   final Random _random;
 
-  /// Builds an ordered list of quick-quiz questions.
+  /// Builds an ordered list of quick-quiz questions for [category].
   Future<List<QuickQuizQuestion>> call({
     int questionCount = 15,
     int optionsPerQuestion = 5,
+    QuizCategory category = QuizCategory.capitals,
   }) async {
     final requiredDistractors = optionsPerQuestion - 1;
     if (requiredDistractors <= 0) {
@@ -50,23 +52,33 @@ class GenerateQuickQuizQuestions {
             country: country,
             allCountries: eligibleCountries,
             requiredDistractors: requiredDistractors,
+            category: category,
           ),
         )
         .toList(growable: false);
+  }
+
+  String _answerOf(Country country, QuizCategory category) {
+    return switch (category) {
+      QuizCategory.capitals => country.capital,
+      QuizCategory.flags => country.name,
+    };
   }
 
   QuickQuizQuestion _toQuestion({
     required Country country,
     required List<Country> allCountries,
     required int requiredDistractors,
+    required QuizCategory category,
   }) {
-    final correctCapital = country.capital;
+    final correctAnswer = _answerOf(country, category);
 
-    final regionDistractors = _buildCapitalPool(
+    final regionDistractors = _buildAnswerPool(
+      category: category,
       countries: allCountries.where((candidate) {
         return candidate.code != country.code &&
             candidate.region == country.region &&
-            candidate.capital != correctCapital;
+            _answerOf(candidate, category) != correctAnswer;
       }),
     )..shuffle(_random);
 
@@ -75,11 +87,13 @@ class GenerateQuickQuizQuestions {
     ];
 
     if (selectedDistractors.length < requiredDistractors) {
-      final globalDistractors = _buildCapitalPool(
+      final globalDistractors = _buildAnswerPool(
+        category: category,
         countries: allCountries.where((candidate) {
+          final answer = _answerOf(candidate, category);
           return candidate.code != country.code &&
-              candidate.capital != correctCapital &&
-              !selectedDistractors.contains(candidate.capital);
+              answer != correctAnswer &&
+              !selectedDistractors.contains(answer);
         }),
       )..shuffle(_random);
 
@@ -91,29 +105,31 @@ class GenerateQuickQuizQuestions {
 
     if (selectedDistractors.length < requiredDistractors) {
       throw StateError(
-        'Not enough distractor capitals to build question for ${country.code}.',
+        'Not enough distractor answers to build question for ${country.code}.',
       );
     }
 
-    final options = <String>[correctCapital, ...selectedDistractors]
+    final options = <String>[correctAnswer, ...selectedDistractors]
       ..shuffle(_random);
 
     return QuickQuizQuestion(
+      category: category,
       countryCode: country.code,
       countryName: country.name,
       flagAssetOrUrl: country.flagAssetOrUrl,
-      correctCapital: correctCapital,
+      correctAnswer: correctAnswer,
       options: options,
     );
   }
 
-  List<String> _buildCapitalPool({
+  List<String> _buildAnswerPool({
+    required QuizCategory category,
     required Iterable<Country> countries,
   }) {
     final unique = <String>{};
 
     for (final country in countries) {
-      unique.add(country.capital);
+      unique.add(_answerOf(country, category));
     }
 
     return unique.toList(growable: false);

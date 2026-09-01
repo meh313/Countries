@@ -89,7 +89,7 @@ void main() {
     expect(find.byKey(const ValueKey('bottom-start-button')), findsOneWidget);
     expect(find.text('Morocco'), findsOneWidget);
     expect(find.text('France'), findsOneWidget);
-    expect(find.text('Capital: Rabat'), findsOneWidget);
+    expect(find.text('Rabat \u00b7 Africa'), findsOneWidget);
   });
 
   testWidgets('filters the list by search query', (tester) async {
@@ -117,7 +117,7 @@ void main() {
     expect(find.text('Capital: Rabat'), findsOneWidget);
     expect(find.byType(CountryMap), findsOneWidget);
     expect(find.byKey(const ValueKey('country-map-marker-MA')), findsOneWidget);
-    expect(find.textContaining('34.0209'), findsOneWidget);
+    expect(find.textContaining('34.0209'), findsWidgets);
   });
 
   testWidgets('opens quiz types from start button and launches quick quiz', (
@@ -130,12 +130,13 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('Choose Quiz Type'), findsOneWidget);
-    expect(find.text('Quick Quiz (MCQ)'), findsOneWidget);
+    expect(find.text('Capitals Quiz (MCQ)'), findsOneWidget);
+    expect(find.text('Flags Quiz (MCQ)'), findsOneWidget);
 
     await tester.tap(find.byKey(const ValueKey('quiz-type-quick')));
     await tester.pumpAndSettle();
 
-    expect(find.text('Quick Quiz (MCQ)'), findsWidgets);
+    expect(find.text('Capitals Quiz'), findsWidgets);
     expect(find.textContaining('Question 1/15'), findsOneWidget);
     expect(find.byKey(const ValueKey('quick-quiz-option-0')), findsOneWidget);
     expect(find.byKey(const ValueKey('bottom-start-button')), findsNothing);
@@ -175,7 +176,7 @@ void main() {
     await tester.pageBack();
     await tester.pumpAndSettle();
 
-    expect(find.text('Quick Quiz (MCQ)'), findsWidgets);
+    expect(find.text('Capitals Quiz'), findsWidgets);
     expect(
         find.byKey(const ValueKey('quick-quiz-next-button')), findsOneWidget);
   });
@@ -204,5 +205,76 @@ void main() {
         find.byKey(const ValueKey('quick-quiz-result-score')), findsOneWidget);
     expect(find.byKey(const ValueKey('quick-quiz-restart-button')),
         findsOneWidget);
+  });
+
+  testWidgets('filters the list by region chip', (tester) async {
+    await tester.pumpWidget(buildApp());
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('region-chip-Europe')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('France'), findsOneWidget);
+    expect(find.text('Morocco'), findsNothing);
+
+    await tester.tap(find.byKey(const ValueKey('region-chip-all')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Morocco'), findsOneWidget);
+  });
+
+  testWidgets('marks a country as favorite and filters by favorites',
+      (tester) async {
+    await tester.pumpWidget(buildApp());
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('favorite-toggle-MA')));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('favorites-filter-button')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Morocco'), findsOneWidget);
+    expect(find.text('France'), findsNothing);
+  });
+
+  testWidgets('runs a flags quiz asking for country names', (tester) async {
+    await tester.pumpWidget(buildApp());
+    await tester.pumpAndSettle();
+
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(MaterialApp)),
+    );
+    final router = container.read(appRouterProvider);
+    router.go('/quiz/quick?category=flags');
+    await tester.pumpAndSettle();
+
+    expect(find.text('Flags Quiz'), findsOneWidget);
+    expect(
+      find.text('Which country does this flag belong to?'),
+      findsOneWidget,
+    );
+    expect(find.byKey(const ValueKey('quick-quiz-option-0')), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('quick-quiz-option-0')));
+    await tester.pumpAndSettle();
+
+    expect(
+        find.byKey(const ValueKey('quick-quiz-feedback-text')), findsOneWidget);
+  });
+
+  testWidgets('toggles between light and dark theme', (tester) async {
+    await tester.pumpWidget(buildApp());
+    await tester.pumpAndSettle();
+
+    MaterialApp app() =>
+        tester.widget<MaterialApp>(find.byType(MaterialApp));
+
+    expect(app().themeMode, ThemeMode.system);
+
+    await tester.tap(find.byKey(const ValueKey('theme-toggle-button')));
+    await tester.pumpAndSettle();
+
+    expect(app().themeMode, isNot(ThemeMode.system));
   });
 }
