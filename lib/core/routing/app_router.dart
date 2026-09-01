@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../features/countries/presentation/screens/countries_list_screen.dart';
 import '../../features/countries/presentation/screens/country_details_screen.dart';
 import '../../features/navigation/presentation/screens/app_shell_screen.dart';
+import '../../features/quiz/domain/entities/quiz_category.dart';
 import '../../features/quiz/presentation/screens/quick_quiz_result_screen.dart';
 import '../../features/quiz/presentation/screens/quick_quiz_screen.dart';
 import '../../features/quiz/presentation/screens/quick_quiz_typing_screen.dart';
@@ -37,11 +38,19 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           ),
           GoRoute(
             path: '/quiz/quick',
-            builder: (context, state) => const QuickQuizScreen(),
+            builder: (context, state) => QuickQuizScreen(
+              category: QuizCategory.fromId(
+                state.uri.queryParameters['category'],
+              ),
+            ),
           ),
           GoRoute(
             path: '/quiz/quick/typing',
-            builder: (context, state) => const QuickQuizTypingScreen(),
+            builder: (context, state) => QuickQuizTypingScreen(
+              category: QuizCategory.fromId(
+                state.uri.queryParameters['category'],
+              ),
+            ),
           ),
           GoRoute(
             path: '/quiz/quick/result',

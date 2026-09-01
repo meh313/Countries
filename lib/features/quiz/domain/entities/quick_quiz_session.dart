@@ -43,8 +43,8 @@ class QuickQuizSession {
   int get score {
     var total = 0;
 
-    answersByQuestionIndex.forEach((index, selectedCapital) {
-      if (questions[index].correctCapital == selectedCapital) {
+    answersByQuestionIndex.forEach((index, selectedAnswer) {
+      if (questions[index].correctAnswer == selectedAnswer) {
         total += 1;
       }
     });
@@ -52,14 +52,20 @@ class QuickQuizSession {
     return total;
   }
 
+  /// Whether the answer stored for [questionIndex] is correct.
+  bool isAnswerCorrect(int questionIndex) {
+    return answersByQuestionIndex[questionIndex] ==
+        questions[questionIndex].correctAnswer;
+  }
+
   /// Returns a copy with updated selected answer for the active question.
-  QuickQuizSession answerCurrentQuestion(String selectedCapital) {
+  QuickQuizSession answerCurrentQuestion(String selectedAnswer) {
     return QuickQuizSession(
       questions: questions,
       currentQuestionIndex: currentQuestionIndex,
       answersByQuestionIndex: {
         ...answersByQuestionIndex,
-        currentQuestionIndex: selectedCapital,
+        currentQuestionIndex: selectedAnswer,
       },
     );
   }

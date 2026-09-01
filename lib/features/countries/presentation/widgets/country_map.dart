@@ -38,6 +38,9 @@ class CountryMap extends StatelessWidget {
               urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
               userAgentPackageName: 'com.example.countries_app',
             ),
+            const SimpleAttributionWidget(
+              source: Text('OpenStreetMap contributors'),
+            ),
             MarkerLayer(
               markers: [
                 Marker(

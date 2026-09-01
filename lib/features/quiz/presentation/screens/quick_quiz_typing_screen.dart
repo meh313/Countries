@@ -2,13 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../countries/presentation/widgets/country_flag.dart';
+import '../../domain/entities/quiz_category.dart';
 import '../providers/quick_quiz_providers.dart';
+import '../widgets/quiz_prompt_card.dart';
+import 'quick_quiz_screen.dart';
 
-/// Runs the 15-question capitals quiz using typed answers.
+/// Runs the 15-question quiz using typed answers.
 class QuickQuizTypingScreen extends ConsumerStatefulWidget {
   /// Creates the typing quiz screen.
-  const QuickQuizTypingScreen({super.key});
+  const QuickQuizTypingScreen({
+    this.category = QuizCategory.capitals,
+    super.key,
+  });
+
+  /// Subject matter of this quiz run.
+  final QuizCategory category;
 
   @override
   ConsumerState<QuickQuizTypingScreen> createState() =>
@@ -23,7 +31,10 @@ class _QuickQuizTypingScreenState extends ConsumerState<QuickQuizTypingScreen> {
     super.initState();
     _answerController.addListener(_handleInputChange);
     Future<void>.microtask(
-      () => ref.read(quickQuizSessionProvider.notifier).start(),
+      () => ref.read(quickQuizSessionProvider.notifier).start(
+            category: widget.category,
+            answerMode: QuizAnswerMode.typing,
+          ),
     );
   }
 
@@ -46,7 +57,7 @@ class _QuickQuizTypingScreenState extends ConsumerState<QuickQuizTypingScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Quick Quiz (Typing)'),
+        title: Text('${widget.category.label} Quiz (Typing)'),
       ),
       body: switch (sessionState.status) {
         QuickQuizSessionStatus.initial ||
@@ -94,40 +105,22 @@ class _TypingReadyQuizBody extends ConsumerWidget {
     final question = session.currentQuestion;
     final selectedAnswer = session.selectedAnswer;
     final isAnswered = session.isCurrentQuestionAnswered;
-    final correctCapital = question.correctCapital;
+    final correctAnswer = question.correctAnswer;
+    final inputLabel = question.category == QuizCategory.flags
+        ? 'Type the country name'
+        : 'Type the capital';
 
-    return Padding(
+    return SingleChildScrollView(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Question ${session.currentQuestionIndex + 1}/${session.questions.length}',
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
+          QuizProgressHeader(session: session),
           const SizedBox(height: 12),
-          Card(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  CountryFlag(
-                    imageUrl: question.flagAssetOrUrl,
-                    heroTag:
-                        'typing-quiz-flag-${question.countryCode}-${session.currentQuestionIndex}',
-                    width: 80,
-                    height: 56,
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      question.countryName,
-                      style: Theme.of(context).textTheme.headlineSmall,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+          QuizPromptCard(
+            question: question,
+            heroTagPrefix: 'typing-quiz',
+            questionIndex: session.currentQuestionIndex,
           ),
           const SizedBox(height: 16),
           TextField(
@@ -135,9 +128,8 @@ class _TypingReadyQuizBody extends ConsumerWidget {
             controller: controller,
             enabled: !isAnswered,
             textInputAction: TextInputAction.done,
-            decoration: const InputDecoration(
-              labelText: 'Type the capital',
-              border: OutlineInputBorder(),
+            decoration: InputDecoration(
+              labelText: inputLabel,
             ),
             onSubmitted: (_) {
               if (!canSubmit) {
@@ -165,19 +157,18 @@ class _TypingReadyQuizBody extends ConsumerWidget {
           ),
           const SizedBox(height: 12),
           if (isAnswered) ...[
-            Text(
-              selectedAnswer == correctCapital
-                  ? 'Correct answer.'
-                  : 'Wrong answer. Correct: $correctCapital',
-              key: const ValueKey('quick-quiz-typing-feedback-text'),
-              style: Theme.of(context).textTheme.bodyLarge,
+            QuizFeedbackText(
+              feedbackKey: const ValueKey('quick-quiz-typing-feedback-text'),
+              isCorrect: selectedAnswer == correctAnswer,
+              correctAnswer: correctAnswer,
             ),
             const SizedBox(height: 12),
             SizedBox(
               width: double.infinity,
               child: OutlinedButton.icon(
                 key: const ValueKey('quick-quiz-typing-view-map-button'),
-                onPressed: () => context.push('/country/${question.countryCode}'),
+                onPressed: () =>
+                    context.push('/country/${question.countryCode}'),
                 icon: const Icon(Icons.map_outlined),
                 label: const Text('View on map'),
               ),

@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:countries_app/features/countries/domain/entities/country.dart';
 import 'package:countries_app/features/countries/domain/repositories/countries_repository.dart';
 import 'package:countries_app/features/countries/domain/usecases/get_all_countries.dart';
+import 'package:countries_app/features/quiz/domain/entities/quiz_category.dart';
 import 'package:countries_app/features/quiz/domain/usecases/generate_quick_quiz_questions.dart';
 
 class _FakeCountriesRepository implements CountriesRepository {
@@ -67,9 +68,10 @@ void main() {
     );
 
     for (final question in questions) {
+      expect(question.category, QuizCategory.capitals);
       expect(question.options, hasLength(5));
       expect(question.options.toSet(), hasLength(5));
-      expect(question.options, contains(question.correctCapital));
+      expect(question.options, contains(question.correctAnswer));
     }
   });
 
@@ -93,7 +95,7 @@ void main() {
       }).length;
 
       final distractors = question.options
-          .where((capital) => capital != question.correctCapital)
+          .where((capital) => capital != question.correctAnswer)
           .toList(growable: false);
 
       if (availableInRegion >= 4) {
@@ -101,6 +103,30 @@ void main() {
           return capitalToCountry[capital]!.region == sourceCountry.region;
         });
         expect(allFromRegion, isTrue);
+      }
+    }
+  });
+
+  test('builds flags questions with country names as options', () async {
+    final useCase = buildUseCase();
+
+    final questions = await useCase(
+      questionCount: 15,
+      optionsPerQuestion: 5,
+      category: QuizCategory.flags,
+    );
+
+    final countryNames = countries.map((country) => country.name).toSet();
+
+    expect(questions, hasLength(15));
+    for (final question in questions) {
+      expect(question.category, QuizCategory.flags);
+      expect(question.correctAnswer, question.countryName);
+      expect(question.options, hasLength(5));
+      expect(question.options.toSet(), hasLength(5));
+      expect(question.options, contains(question.correctAnswer));
+      for (final option in question.options) {
+        expect(countryNames, contains(option));
       }
     }
   });
